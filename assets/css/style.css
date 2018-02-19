@@ -2910,3 +2910,22 @@ ul.contact-social li a {
     font-size: 18px;
     margin-bottom: 26px;
 }
+
+.courseWrapper {
+	padding: 10px 15px;
+	background-color: #FFEBEC;
+	margin-top: 20px;
+	min-height: 112px;
+}
+
+.courseWrapper p
+{
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.courseWrapper:hover{
+	-webkit-box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.75);
+box-shadow: 0px 4px 13px -4px rgba(0,0,0,0.75);
+}
