@@ -607,7 +607,7 @@
                             <form id="contact_form">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your name" required>
                                 <input type="email" name="email" class="form-control" id="email" placeholder="Email here" required>
-                                <textarea name="message" class="form-control" rows="1" placeholder="Type your message" required></textarea>
+                                <textarea name="message" class="form-control" rows="1" placeholder="Type your message" required id="message"></textarea>
                                 <button type="submit" class="boxed-btn" id="contact_submit"> Submit</button>
                             </form>
                         </div>
@@ -687,6 +687,25 @@
         var $form = $('#contact_form'),
         url = 'https://script.google.com/macros/u/0/s/AKfycbzNCD00PvxU3GEw7rCaoCF1elByPUL2FZO5M3csJThX_L69sQ/exec'
         $('#contact_submit').on('click', function(e) {
+            var name = $('#name').val();
+            var email = $('#email').val();
+            var message = $('#message').val();
+
+            if(name == '')
+            {
+                alert('Please enter the name');
+                return false;
+            }else if(email == '')
+            {
+                alert('Please enter the email address');
+                return false;
+            }else if(message == '')
+            {
+                alert('Please enter the message');
+                return false;
+            }
+
+
           var jqxhr = $.ajax({
             url: url,
             method: "GET",
