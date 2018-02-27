@@ -59,6 +59,29 @@ $("#contact_form").submit(function(event){
 // Bind to the submit event of our form
 $("#course_application").submit(function(event){
 
+    var name = $('#form1_name').val();
+    var email = $('#form1_email').val();
+    var phone = $('#form1_phone').val();
+    var message = $('#form1_message').val();
+
+    if(name == '')
+    {
+        alert('Please provide us your name');
+        return false;
+    }else if(email == '')
+    {
+        alert('Please enter your email address');
+        return false;
+    }else if(phone == '' || isNaN(phone))
+    {
+        alert('Please enter a valid phone number');
+        return;
+    }else if (message == '')
+    {
+        alert('Please provide us a message');
+        return false;
+    }
+
     // Abort any pending request
     if (request) {
         request.abort();
