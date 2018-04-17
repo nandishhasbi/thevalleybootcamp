@@ -1,0 +1,98 @@
+section#footer-copyright
+  .container
+    .row
+      .col-md-12
+        .text-center
+          p ©2018 All Rights Reserved - http://www.thevalleybootcamp.com/
+          a.scrollup(href='#')
+            i.fa.fa-arrow-up
+
+script(src='/assets/js/jquery-3.2.1.min.js')
+script(type='text/javascript', src='/js/moment.js')
+script(type='text/javascript', src='/js/moment-timezone-with-data.js')
+script(type='text/javascript', src='/js/timer.js')
+script(src='/js/jquery.chocolat.js')
+link(rel='stylesheet', href='/css/chocolat.css', type='text/css', media='screen')
+script(type='text/javascript').
+  $(function () {
+    $('.gallery a').Chocolat();
+  });
+script(src='/js/particles.js')
+script(type='text/javascript', src='/js/jquery.transit.js')
+script(type='text/javascript', src='/js/jquery.textFx.js')
+script(type='text/javascript').
+  $(document).ready(function () {
+    $('.test').textFx({
+      type: 'fadeIn',
+      iChar: 100,
+      iAnim: 1000
+    });
+  });
+script(src='/js/SmoothScroll.min.js')
+script(type='text/javascript').
+  jQuery(document).ready(function ($) {
+    $(".scroll").click(function (event) {
+      event.preventDefault();
+      $('html,body').animate({
+        scrollTop: $(this.hash).offset().top
+      }, 1000);
+    });
+    //Google form integration
+    var $form = $('#contact_form'),
+    url = 'https://script.google.com/macros/u/0/s/AKfycbzNCD00PvxU3GEw7rCaoCF1elByPUL2FZO5M3csJThX_L69sQ/exec'
+    $('#contact_submit').on('click', function (e) {
+      var name = $('#name').val();
+      var email = $('#email').val();
+      var message = $('#message').val();
+      if (name == '') {
+        alert('Please enter the name');
+        return false;
+      } else if (email == '') {
+        alert('Please enter the email address');
+        return false;
+      } else if (message == '') {
+        alert('Please enter the message');
+        return false;
+      }
+      var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+      }).success(
+        // do something
+        alert('Thank you! We have received your request.')
+      );
+    });
+  });
+script(src='/assets/js/popper.min.js')
+script(src='/assets/js/bootstrap.min.js')
+script(src='/assets/js/jquery.sticky.js')
+script(src='/assets/js/owl.carousel.min.js')
+script(src='/assets/js/jquery.shuffle.min.js')
+script(src='/assets/js/jquery.counterup.min.js')
+script(src='/assets/js/wow.min.js')
+script(src='/assets/js/jquery.meanmenu.min.js')
+
+script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js')
+
+script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAqoWGSQYygV-G1P5tVrj-dM2rVHR5wOGY')
+script(src='/assets/js/map-script.js')
+
+script(src='/assets/js/custom.js')
+script(type='text/javascript').
+  $(document).ready(function () {
+    var windows = $(window);
+    var stickSide = $(".navbar-area");
+    windows.on('scroll', function () {
+      var scroll = windows.scrollTop();
+      if (scroll < 100) {
+        stickSide.addClass('add_top_margin');
+      } else {
+        stickSide.removeClass('add_top_margin');
+      }
+    });
+  });
+// Attach google spreadsheet linking
+script(src='google-sheet.js')

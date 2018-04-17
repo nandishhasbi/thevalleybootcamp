@@ -1,0 +1,389 @@
+extends layout
+
+block pageTitle
+  title #{page.title.toUpperCase()}
+
+block content
+  div.preloader
+    div.loader
+
+  header#header
+    .row
+      .col-md-12
+        .header-slider
+          .header-single-slider
+            figure
+              img.img-responsive(src='/assets/img/homepage/slider/slider01.jpg', alt='Slider Image')
+              figcaption
+                .content
+                  .container.inner-content.text-left
+                    h1 Python + Machine Learning
+                    p Learn Machine Learning and get yourself the hottest jobs
+                    a.boxed-btn(href='#curriculum')
+                      | View More 
+                      i.icofont.icofont-long-arrow-right
+
+  section#features-list
+    #valley_experience.container
+      .row.text-lg-left.text-md-center
+        .col-md-4.mb-lg-0.mb-3
+          .features-list-item.wow.fadeInUp(data-wow-delay='0.1s')
+            span.icon
+              i.icofont.icofont-triangle
+            h4 Get your fundamentals right
+            p.small
+              | All our mentors have more than 15 years of combined experience. We at valley help you understand programming
+              | right from the basic. So even if you new to programming, dont worry we have everything that you want for success.
+        .col-md-4.mb-md-0.mb-3
+          .features-list-item.wow.fadeInUp(data-wow-delay='0.2s')
+            span.icon
+              i.icofont.icofont-brand-airtel
+            h4 Placement Assurance
+            p.small
+              | We know what it takes to clear a coding interview. We will train you and get you placed. Our students generally
+              | get placed within 6 months from the program completion. If they don't get placed, we give their money back.
+              | Deal?
+        .col-md-4
+          .features-list-item.wow.fadeInUp(data-wow-delay='0.3s')
+            span.icon
+              i.icofont.icofont-brand-teliasonera
+            h4 Mentors
+            p.small
+              | All our mentors are US returns having studied in some of the prestigious universities. They have worked in companies
+              | like IBM Watson, PayPal, Akamai, etc. Their tremendous work experience and their love to teach will make sure
+              | that our students learn from experts.
+
+  .container
+    #menu1.col-xs-12.col-sm-12.col-md-3.col-lg-3.hidden-sm.hidden-xs(style='float: left;')
+      #sideScrollerMenu
+        p.hot_links_header Hot Links
+        ul.sideScrollerMenuItems
+          li
+            a(href='#valley_experience') Valley Experience
+          li
+            a(href='#curriculum') Curriculum
+          li
+            a(href='#portfolio') Program Dates
+          li
+            a(href='#mentors') Mentors
+          li
+            a(href='#placement') Placement Assurance
+          li
+            a(href='#tution') Tuition & Financing
+          li
+            a(href='#money') Money back guarantee
+
+    #menu2.col-xs-12.col-sm-12.col-md-12.col-lg-12.visible-sm.visible-xs(style='float: left;')
+      #sideScrollerMenu2
+        p.hot_links_header Hot Links
+        ul.sideScrollerMenuItems
+          li
+            a(href='#valley_experience') Valley Experience
+          li
+            a(href='#curriculum') Curriculum
+          li
+            a(href='#portfolio') Program Dates
+          li
+            a(href='#mentors') Mentors
+          li
+            a(href='#placement') Placement Assurance
+          li
+            a(href='#tution') Tuition & Financing
+          li
+            a(href='#money') Money back guarantee
+          li
+            a(href='#faq') FAQ
+
+    .col-xs-12.col-sm-12.col-md-9.col-lg-9(style='float: right;')
+      .clearfix
+
+      section
+        .row
+          .col-md-12.text-center
+            .section-header
+              h2 Valley Experience
+              p
+                | Valley experience is all about learning to code in an effective and proper way. It helps build your fundamentals
+                | strong in technology. Valley experience coupled with intensive coding bootcamp will not only make an individual
+                | learn to code but it also helps the individual launch his career. We here at valley are committed in providing
+                | quality knowledge through our cutting edge training methodologies. We are the first coding bootcamp in
+                | bangalore who are working together to make developers better every day.
+        .row.text-center
+          .col-lg-3.col-md-6.col-sm-6.col-12.mb-lg-0.mb-4
+            .services-item.wow.fadeInUp(data-wow-delay='0.4s')
+              .service-icon
+                img(src='/assets/img/homepage/service/serviceicon03.png', alt='Service Icon 1')
+              h4 Pre work
+              p
+                | Before you get started with learning from valley, start your pre work. You will be given a certain amount
+                | of study material to finish before you start learning in valley.
+          .col-lg-3.col-md-6.col-sm-6.col-12.mb-lg-0.mb-4
+            .services-item.wow.fadeInUp(data-wow-delay='0.3s')
+              .service-icon
+                i.icofont.icofont-earphone
+              h4 Learn at valley
+              p
+                | At valley, you will undergo a stringent hands on coding exercise in the supervision of some renowned instructors.
+                | Get ready to put your coding hat on.
+          .col-lg-3.col-md-6.col-sm-6.col-12.mb-lg-0.mb-md-0.mb-4
+            .services-item.wow.fadeInUp(data-wow-delay='0.2s')
+              .service-icon
+                img(src='/assets/img/homepage/service/serviceicon02.png', alt='Service Icon 2')
+              h4 Placement training
+              p
+                | The moment you finish learning in the bootcamp, we directly start you placement training. This is again instructor
+                | led. We know what is usually asked in the interviews, and we prepare you exactly for that.
+          .col-lg-3.col-md-6.col-sm-6.col-12
+            .services-item.wow.fadeInUp(data-wow-delay='0.1s')
+              .service-icon
+                i.icofont.icofont-social-concrete5
+              h4 Post valley bootcamp
+              p
+                | We provide students support once they get placed too. You will have access to our instructors, study materials
+                | etc even after you graduate.
+
+      section#curriculum.section-padding
+        .row
+          .col-md-12.text-center
+            .section-header
+              h2 Curriculum
+              p
+                | This course will start with an introduction to python programming. The course covers all the topics needed
+                | to be a good backend developer. On the scripting part, we cover Linux and shell scripting. We also go through
+                | the basics of github. We start with setting up the environment using python, pip and pycharm. We go through
+                | how a rest api works and also implement few of them. Our database lessons will include, mongoDb and SQL
+                | and we also teach some basics in cloud computing like EC2, dynamoDb, RDS, S3 etc.
+              br
+              p
+                | This course will introduce the learner to applied machine learning, focusing more on the techniques and methods
+                | than on the statistics behind these methods. The course will start with a discussion of how machine learning
+                | is different than descriptive statistics. The issue of dimensionality of data will be discussed, and the
+                | task of clustering data, as well as evaluating those clusters, will be tackled. Supervised approaches for
+                | creating predictive models will be described. The course will end with a look at more advanced techniques,
+                | such as building ensembles, and practical limitations of predictive models. By the end of this course,
+                | students will be able to identify the difference between a supervised (classification) and unsupervised
+                | (clustering) technique, identify which technique they need to apply for a particular dataset and need,
+                | engineer features to meet that need, and write python code to carry out an analysis
+              .row
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 1
+                      p Introduction to Python + ML
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 2
+                      p Linux And Shell Scripting.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 3
+                      p Python, PIP, Pycharm.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 4
+                      p Understanding REST API.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 5
+                      p Build your own rest api.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 6
+                      p Databases: MongoDb, SQL
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 7
+                      p Cloud Computing: EC2, S3 etc.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 8
+                      p Interview preparation. DS and Algos.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 9
+                      p
+                        | Introduction to Machine Learning, Probability, Conditional Probability, Bayes Theorem.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 10
+                      p Statistics, Linear Regression, Logistics Regression.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 11
+                      p Supervised/Unsupervised learning, Distance measures, Artificial neural networks.
+                .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                  .courseWrapper
+                    center
+                      p
+                        b Week 12
+                      p Clustering and Classification.
+              br
+              br
+              a.boxed-btn(href='docs/The Valley Bootcamp - Python Machine Learning.pdf', target='_blank')
+                | Download Syllabus
+                i#portfolio.icofont.icofont-long-arrow-right
+
+      section
+        .row
+          .col-md-6.offset-md-3.text-center
+            .section-header
+              h2 Program Dates
+        .row
+          .col-lg-12.col-md-12.col-sm-12.mb-lg-0.mb-4(style='margin-top:-70px;')
+            .pricing-tale.wow.fadeInUp(data-wow-delay='0.1s')
+              .prcing-head
+                center
+                  h3 Python + Machine Learning
+              br
+              .features
+                ul(style='text-align: center;')
+                  li Start date - 20 May 2018
+                  li Location - Bangalore
+
+      section#mentors.section-padding
+        .row
+          .col-md-6.offset-md-3.text-center
+            .section-header
+              h2 Mentors
+              p.wow.fadeInUp(data-wow-delay='0.1s')
+                | Top notch software engineers with a combined experience of more than 15 years of software development experience.
+        .row
+          .col-md-12
+            .testimonial-carousel.text-center
+              .single-testimonial
+                .img-rounded
+                  img(src='/images/new/sunil_small.jpg', alt='Sunil')
+                h4 Sunil
+                p.title
+                  | ex IBM Watson
+                  br
+                  |  New York
+                p
+                  a(href='https://www.linkedin.com/in/sunil3590/')
+                    i.fa.fa-linkedin(aria-hidden='true')
+              .single-testimonial
+                .img-rounded
+                  img(src='/images/new/nandish_small.jpg', alt='Nandish')
+                h4 Nandeesh
+                p.title
+                  | ex PayPal
+                  br
+                  |  Boston
+                p
+                  a(href='https://www.linkedin.com/in/nandeesh-hasbi-34157b45/')
+                    i.fa.fa-linkedin(aria-hidden='true')
+              .single-testimonial
+                .img-rounded
+                  img(src='/images/new/teamx.jpg', alt='We are hiring')
+                h4 We are hiring
+                p.title
+                  | Mentors
+                  br
+                  |  Bangalore
+                p
+                p
+                  a(href='mailto:thevalleybootcamp@gmail.com') Apply
+
+      section#placement.section-padding-top
+        .row
+          .col-md-6.offset-md-3.text-center
+            .section-header
+              h2 Placement assurance
+              p You graduate from Valley and you will get jobs. Period.
+        .row.text-center
+          .col-lg-3.col-md-6.col-sm-6.col-12.mb-lg-0.mb-4
+            .features-item.item-1.wow.fadeInUp(data-wow-delay='0.1s')
+              i.icofont.icofont-earphone
+              h5 Money back guarantee
+              p.small
+                | If you don't get a job within 6 months of graduation, we will refund you your tuition.
+          .col-lg-3.col-md-6.col-sm-6.col-12.mb-lg-0.mb-4
+            .features-item.item-2.wow.fadeInUp(data-wow-delay='0.2s')
+              i.icofont.icofont-vehicle-crane
+              h5 Online presence
+              p.small
+                | Once you graduate, you will have strong and unique portfolio presence in github. You will be doing close
+                | to 3 projects during the class hours. We help you increase your marketability along with helping you to
+                | learn to code.
+          .col-lg-3.col-md-6.col-sm-6.col-12.mb-md-0.mb-lg-0.mb-4
+            .features-item.item-3.wow.fadeInUp(data-wow-delay='0.3s')
+              i.icofont.icofont-architecture-alt
+              h5 Excellent placement team
+              p.small
+                | We have a top notch placement team which is constantly looking to place our candidates into various companies.
+                | Our proven track record in placement is an example on how good our placement team is.
+          .col-lg-3.col-md-6.col-sm-6.col-12
+            .features-item.item-4.wow.fadeInUp(data-wow-delay='0.4s')
+              i.icofont.icofont-brand-tribenet
+              h5 Practise, practise, practise
+              p.small
+                | And at last, you will undergo rigorous practise sessions in the form of mock interviews, whiteboard coding
+                | challenges, group discussions etc.
+
+      section#tution.section-padding-top
+        .row
+          .col-md-6.offset-md-3.text-center
+            .section-header
+              h2 Tuition & Financing
+              p Affordable and pocket friendly pricing
+        .row
+          .col-lg-12.col-md-12.col-sm-12.mb-lg-0.mb-4
+            .pricing-tale.wow.fadeInUp(data-wow-delay='0.1s')
+              .prcing-head
+                center
+                  h3 Python and Machine Learning along with Placements
+              br
+              br
+              .features
+                ul(style='text-align: center;')
+                  li
+                    i.icofont.icofont-tick-mark
+                    |  Pay full : INR 29,999 + GST
+                  li
+                    i.icofont.icofont-tick-mark
+                    |  Study now, pay later with
+                    a(href='http://www.propelld.com', target='_blank') www.propelld.com
+
+      section#money.section-padding
+        .row
+          .col-md-12.text-center
+            .section-header
+              h2 Money back guarantee
+              p
+                | We pride ourselves in giving quality education and helping students with placements, if you don't get a job
+                | within 6 months of course completion, we will refund you. Check eligibility criteria.
+              br
+              a.boxed-btn(href='placement-assurance.html')
+                | Eligibility Criteria
+                i.icofont.icofont-long-arrow-right
+
+      .clearfix
+    
+  div(style="width: 100%; height: 200px;")
+
+  include ./partials/footer-contact-form.jade
+
+
+
+

@@ -1,0 +1,44 @@
+{
+  "python-ml": {
+    "title": "name of title",
+    "subtitle": "tag line",
+    "curriculum": {
+      "text": "lots of text",
+      "weeks": ["some topic", "some topic", "some topic"],
+      "download": "some url"
+    },
+    "dates": [
+      {
+        "start": "some date",
+        "schedule": "one line for schedule",
+        "size": 30,
+        "available": 10
+      },
+      {
+        "start": "some date",
+        "schedule": "one line for schedule",
+        "size": 30,
+        "available": 20
+      }
+    ],
+    "mentors": [
+      {
+        "name": "some name",
+        "line1": "small text",
+        "line2": "small text",
+        "linkedin": "url",
+        "image": "url"
+      },
+      {
+        "name": "some name",
+        "line1": "small text",
+        "line2": "small text",
+        "linkedin": "url",
+        "image": "url"
+      }
+    ],
+    "price": 200
+  },
+  "full-stack": {},
+  "python-backend": {}
+}
