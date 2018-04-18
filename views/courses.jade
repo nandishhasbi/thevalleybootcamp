@@ -17,8 +17,8 @@ block content
               figcaption
                 .content
                   .container.inner-content.text-left
-                    h1 Python + Machine Learning
-                    p Learn Machine Learning and get yourself the hottest jobs
+                    h1 #{course.title}
+                    p #{course.subtitle}
                     a.boxed-btn(href='#curriculum')
                       | View More 
                       i.icofont.icofont-long-arrow-right
@@ -148,99 +148,20 @@ block content
             .section-header
               h2 Curriculum
               p
-                | This course will start with an introduction to python programming. The course covers all the topics needed
-                | to be a good backend developer. On the scripting part, we cover Linux and shell scripting. We also go through
-                | the basics of github. We start with setting up the environment using python, pip and pycharm. We go through
-                | how a rest api works and also implement few of them. Our database lessons will include, mongoDb and SQL
-                | and we also teach some basics in cloud computing like EC2, dynamoDb, RDS, S3 etc.
+                | #{course.curriculum.text}
               br
-              p
-                | This course will introduce the learner to applied machine learning, focusing more on the techniques and methods
-                | than on the statistics behind these methods. The course will start with a discussion of how machine learning
-                | is different than descriptive statistics. The issue of dimensionality of data will be discussed, and the
-                | task of clustering data, as well as evaluating those clusters, will be tackled. Supervised approaches for
-                | creating predictive models will be described. The course will end with a look at more advanced techniques,
-                | such as building ensembles, and practical limitations of predictive models. By the end of this course,
-                | students will be able to identify the difference between a supervised (classification) and unsupervised
-                | (clustering) technique, identify which technique they need to apply for a particular dataset and need,
-                | engineer features to meet that need, and write python code to carry out an analysis
+
               .row
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 1
-                      p Introduction to Python + ML
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 2
-                      p Linux And Shell Scripting.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 3
-                      p Python, PIP, Pycharm.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 4
-                      p Understanding REST API.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 5
-                      p Build your own rest api.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 6
-                      p Databases: MongoDb, SQL
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 7
-                      p Cloud Computing: EC2, S3 etc.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 8
-                      p Interview preparation. DS and Algos.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 9
-                      p
-                        | Introduction to Machine Learning, Probability, Conditional Probability, Bayes Theorem.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 10
-                      p Statistics, Linear Regression, Logistics Regression.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 11
-                      p Supervised/Unsupervised learning, Distance measures, Artificial neural networks.
-                .col-xs-6.col-sm-6.col-md-4.col-lg-3
-                  .courseWrapper
-                    center
-                      p
-                        b Week 12
-                      p Clustering and Classification.
+                each week, index in course.curriculum.weeks
+                  .col-xs-6.col-sm-6.col-md-4.col-lg-3
+                    .courseWrapper
+                      center
+                        p
+                          b Week #{index + 1}
+                        p #{week}
               br
               br
-              a.boxed-btn(href='docs/The Valley Bootcamp - Python Machine Learning.pdf', target='_blank')
+              a.boxed-btn(href=course.curriculum.download, target='_blank')
                 | Download Syllabus
                 i#portfolio.icofont.icofont-long-arrow-right
 
@@ -254,12 +175,15 @@ block content
             .pricing-tale.wow.fadeInUp(data-wow-delay='0.1s')
               .prcing-head
                 center
-                  h3 Python + Machine Learning
+                  h3 #{course.title}
               br
               .features
                 ul(style='text-align: center;')
-                  li Start date - 20 May 2018
-                  li Location - Bangalore
+                  each date in course.dates
+                    li Start date - #{date.start}
+                    li Schedule - #{date.schedule}
+                    li Location - #{date.location ||  "Bangalore"}
+                    br
 
       section#mentors.section-padding
         .row
@@ -271,28 +195,18 @@ block content
         .row
           .col-md-12
             .testimonial-carousel.text-center
-              .single-testimonial
-                .img-rounded
-                  img(src='/images/new/sunil_small.jpg', alt='Sunil')
-                h4 Sunil
-                p.title
-                  | ex IBM Watson
-                  br
-                  |  New York
-                p
-                  a(href='https://www.linkedin.com/in/sunil3590/')
-                    i.fa.fa-linkedin(aria-hidden='true')
-              .single-testimonial
-                .img-rounded
-                  img(src='/images/new/nandish_small.jpg', alt='Nandish')
-                h4 Nandeesh
-                p.title
-                  | ex PayPal
-                  br
-                  |  Boston
-                p
-                  a(href='https://www.linkedin.com/in/nandeesh-hasbi-34157b45/')
-                    i.fa.fa-linkedin(aria-hidden='true')
+              each mentor in course.mentors
+                .single-testimonial
+                  .img-rounded
+                    img(src=mentor.image, alt=mentor.name)
+                  h4 Sunil
+                  p.title
+                    | #{mentor.line1}
+                    br
+                    |  #{mentor.line2}
+                  p
+                    a(href=mentor.linkedin)
+                      i.fa.fa-linkedin(aria-hidden='true')
               .single-testimonial
                 .img-rounded
                   img(src='/images/new/teamx.jpg', alt='We are hiring')
@@ -352,14 +266,14 @@ block content
             .pricing-tale.wow.fadeInUp(data-wow-delay='0.1s')
               .prcing-head
                 center
-                  h3 Python and Machine Learning along with Placements
+                  h3 #{course.title} along with Placements
               br
               br
               .features
                 ul(style='text-align: center;')
                   li
                     i.icofont.icofont-tick-mark
-                    |  Pay full : INR 29,999 + GST
+                    |  Pay full : INR #{course.price} + GST
                   li
                     i.icofont.icofont-tick-mark
                     |  Study now, pay later with

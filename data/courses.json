@@ -3,7 +3,8 @@
     "title": "Full Stack Web development",
     "subtitle": "Become a full-stack web developer or get your money back",
     "curriculum": {
-      "text": "<vijay adds content here>",
+      "text":
+        "The Full Stack Web Development course is aimed at teaching you the technologies that are used to build powerful, multi-user web applications. We will cover React JS on the front-end and NodeJS + MongoDB on the backend. We will go through how a rest api works, how APIs are used all over the web today to power multi-platform applications and build a few along the way. ",
       "weeks": ["some topic", "some topic", "some topic"],
       "download": "<course content pdf link>"
     },
@@ -12,12 +13,14 @@
         "start": "May 19/2018 - July 22/2018 ",
         "schedule": "Saturday-Sunday, 10:00 am - 4:00 pm.",
         "size": 36,
+        "location": "",
         "available": 10
       },
       {
         "start": "some date",
         "schedule": "one line for schedule",
         "size": 30,
+        "location": "",
         "available": 20
       }
     ],
@@ -37,7 +40,7 @@
         "image": "url"
       }
     ],
-    "price": "INR 35000 + GST"
+    "price": 35000
   },
   "python-machinelearning": {
     "title": "Python Machine Learning",
@@ -92,7 +95,7 @@
         "image": "url"
       }
     ],
-    "price": "INR 35000 + GST"
+    "price": 35000
   },
   "python-backend": {
     "title": "Python Backend Development",
@@ -144,6 +147,6 @@
         "image": "url"
       }
     ],
-    "price": "INR 25000 + GST"
+    "price": 25000
   }
 }

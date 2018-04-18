@@ -18,10 +18,9 @@
                 | Courses 
                 i.fa.fa-angle-down
               ul
-                li
-                  a(href='python-machine-learning.html') Python + Machine Learning
-                li
-                  a(href='python-backend.html') Python Backend Development
+                each course, courseName in courses
+                  li
+                    a(href="/courses/#{courseName}") #{course.title}
             li
               a(href='#team') Team
             li
