@@ -1,17 +1,17 @@
 {
-  "python-ml": {
-    "title": "name of title",
-    "subtitle": "tag line",
+  "full-stack": {
+    "title": "Full Stack Web development",
+    "subtitle": "Become a full-stack web developer or get your money back",
     "curriculum": {
-      "text": "lots of text",
+      "text": "<vijay adds content here>",
       "weeks": ["some topic", "some topic", "some topic"],
-      "download": "some url"
+      "download": "<course content pdf link>"
     },
     "dates": [
       {
-        "start": "some date",
-        "schedule": "one line for schedule",
-        "size": 30,
+        "start": "May 19/2018 - July 22/2018 ",
+        "schedule": "Saturday-Sunday, 10:00 am - 4:00 pm.",
+        "size": 36,
         "available": 10
       },
       {
@@ -23,22 +23,127 @@
     ],
     "mentors": [
       {
-        "name": "some name",
-        "line1": "small text",
-        "line2": "small text",
-        "linkedin": "url",
+        "name": "Sunil DS",
+        "line1": "MS NSCU, BE PESIT(CS)",
+        "line2": "IBM, NIKI,Interactions",
+        "linkedin": "https://www.linkedin.com/in/sunil3590/",
         "image": "url"
       },
       {
-        "name": "some name",
-        "line1": "small text",
-        "line2": "small text",
-        "linkedin": "url",
+        "name": "Nandeesh Hasbi",
+        "line1": "MS NEU, BE PESIT",
+        "line2": "PayPal, Akamai",
+        "linkedin": "https://www.linkedin.com/in/nandeeshhasbi/",
         "image": "url"
       }
     ],
-    "price": 200
+    "price": "INR 35000 + GST"
   },
-  "full-stack": {},
-  "python-backend": {}
+  "python-machinelearning": {
+    "title": "Python Machine Learning",
+    "subtitle": "Learn Machine learning and get yourself the hottest jobs.",
+    "curriculum": {
+      "text":
+        "This course will start with an introduction to python programming. The course covers all the topics needed to be a good backend developer. On the scripting part, we cover Linux and shell scripting. We also go through the basics of github. We start with setting up the environment using python, pip and pycharm. We go through how a rest api works and also implement few of them. Our database lessons will include, mongoDb and SQL and we also teach some basics in cloud computing like EC2, dynamoDb, RDS, S3 etc. This course will introduce the learner to applied machine learning, focusing more on the techniques and methods than on the statistics behind these methods.The course will start with a discussion of how machine learning is different than descriptive statistics.The issue of dimensionality of data will be discussed, and the task of clustering data, as well as evaluating those clusters, will be tackled.Supervised approaches for creating predictive models will be described.The course will end with a look at more advanced techniques,such as building ensembles, and practical limitations of predictive models.By the end of this course, students will be able to identify the difference between a supervised(classification) and unsupervised(clustering) technique, identify which technique they need to apply for a particular dataset and need, engineer features to meet that need,and write python code to carry out an analysis",
+      "weeks": [
+        "Introduction to Python + ML",
+        "Linux And Shell Scripting.",
+        "Python, PIP, Pycharm.",
+        "Understanding REST API.",
+        "Build your own rest api.",
+        "Databases: MongoDb, SQL",
+        "Cloud Computing: EC2, S3 etc.",
+        "Interview preparation. DS and Algos.",
+        "Introduction to Machine Learning, Probability, Conditional Probability, Bayes Theorem.",
+        "Statistics, Linear Regression, Logistics Regression.",
+        "Supervised/Unsupervised learning, Distance measures, Artificial neural networks.",
+        "Clustering and Classification."
+      ],
+      "download":
+        "http://www.thevalleybootcamp.com/docs/The%20Valley%20Bootcamp%20-%20Python%20Machine%20Learning.pdf"
+    },
+    "dates": [
+      {
+        "start": "Jun 02/2018 - Aug 19/2018 ",
+        "schedule": "Saturday-Sunday, 10:00 am - 4:00 pm.",
+        "size": 36,
+        "available": 10
+      },
+      {
+        "start": "some date",
+        "schedule": "one line for schedule",
+        "size": 30,
+        "available": 20
+      }
+    ],
+    "mentors": [
+      {
+        "name": "Sunil DS",
+        "line1": "MS NSCU, BE PESIT(CS)",
+        "line2": "IBM, NIKI,Interactions",
+        "linkedin": "https://www.linkedin.com/in/sunil3590/",
+        "image": "url"
+      },
+      {
+        "name": "Nandeesh Hasbi",
+        "line1": "MS NEU, BE PESIT",
+        "line2": "PayPal, Akamai",
+        "linkedin": "https://www.linkedin.com/in/nandeeshhasbi/",
+        "image": "url"
+      }
+    ],
+    "price": "INR 35000 + GST"
+  },
+  "python-backend": {
+    "title": "Python Backend Development",
+    "subtitle":
+      "Learn python backend development and take a leap in your career",
+    "curriculum": {
+      "text":
+        "This course will start with an introduction to python programming. The course covers all the topics needed to be a good backend developer. On the scripting part, we cover Linux and shell scripting. We also go through the basics of github. We start with setting up the environment using python, pip and pycharm. We go through how a rest api works and also implement few of them. Our database lessons will include, mongoDb and SQL and we also teach some basics in cloud computing like EC2, dynamoDb, RDS, S3 etc.",
+      "weeks": [
+        "Introduction to Python + ML",
+        "Linux And Shell Scripting",
+        "Python, PIP, Pycharm",
+        "Understanding REST API",
+        "Build your own rest API",
+        "Databases: MongoDb, SQL",
+        "Cloud Computing: EC2, S3 etc.",
+        "Interview preparation. DS and Algos."
+      ],
+      "download":
+        "http://www.thevalleybootcamp.com/docs/The%20Valley%20Bootcamp%20-%20Python.pdf"
+    },
+    "dates": [
+      {
+        "start": "June 02/2018 - July 22/2018 ",
+        "schedule": "Saturday-Sunday, 10:00 am - 4:00 pm.",
+        "size": 36,
+        "available": 10
+      },
+      {
+        "start": "some date",
+        "schedule": "one line for schedule",
+        "size": 30,
+        "available": 20
+      }
+    ],
+    "mentors": [
+      {
+        "name": "Sunil DS",
+        "line1": "MS NSCU, BE PESIT(CS)",
+        "line2": "IBM, NIKI,Interactions",
+        "linkedin": "https://www.linkedin.com/in/sunil3590/",
+        "image": "url"
+      },
+      {
+        "name": "Nandeesh Hasbi",
+        "line1": "MS NEU, BE PESIT",
+        "line2": "PayPal, Akamai",
+        "linkedin": "https://www.linkedin.com/in/nandeeshhasbi/",
+        "image": "url"
+      }
+    ],
+    "price": "INR 25000 + GST"
+  }
 }
