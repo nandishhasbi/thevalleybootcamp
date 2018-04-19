@@ -1,0 +1,26 @@
+section#contact-area
+  #map
+  .contact-box
+    .row
+      .col-lg-5.col-md-12
+        .contact-us-info
+          h3 Contact Us
+          ul.contact-info
+            li
+              i.icofont.icofont-location-pin
+              p Bangalore, Karnataka
+            li
+              i.icofont.icofont-email
+              p thevalleybootcamp@gmail.com
+            li
+              i.icofont.icofont-ui-call
+              p +91-9916778133
+      .col-lg-7.col-md-12
+        .get-in-touch
+          h3 Get in Touch
+          p Feel free to contact with us
+          form(action='#', method='post')
+            input#name.form-control(type='text', name='name', placeholder='Your name', required='')
+            input#email.form-control(type='email', name='email', placeholder='Email here', required='')
+            textarea.form-control(name='message', rows='1', placeholder='Type your message', required='')
+            button.boxed-btn(type='submit')  Submit

@@ -1,0 +1,60 @@
+.navbar-area.sticky-nav
+  .container
+    .row
+      .col-lg-3.col-6
+        .logo.main
+          a(href='/', style='margin-top: 20px;')
+            img.responsive(src='/assets/img/logo.png', alt='Site Logo')
+      // Nav
+      .col-lg-6.d-none.d-lg-block
+        nav.text-right.main-menu
+          ul
+            li.active
+              a(href='/') Home
+            li
+              a(href='/#about') About
+            li
+              a(href='/#courses')
+                | Courses 
+                i.fa.fa-angle-down
+              ul
+                each course, courseName in courses
+                  li
+                    a(href="/courses/#{courseName}") #{course.title}
+            li
+              a(href='/#team') Team
+            li
+              a(href='/#contact-area') Contact
+      // Nav End
+      .col-lg-3.col-6
+        .header-right-bar
+          ul
+            li.book-now-btn
+              a.book-now.apply(href='#apply', style='background-color:#ec1935;color:#fff;')
+                i.fa.fa-book
+                | Apply Now
+  // Start Mobile Menu
+  .mobile-menu-area.d-lg-none
+    .container
+      .row
+        .col-md-12
+          .mobile-menu(style='margin-top:25px;')
+            nav.mobile-menu-active
+              ul
+                li.active
+                  a(href='/') Home
+                li
+                  a(href='#about') About
+                li
+                  a(href='#courses')
+                    | Courses 
+                    i.fa.fa-angle-down
+                  ul
+                    li
+                      a(href='python-machine-learning.html') Python + Machine Learning
+                    li
+                      a(href='python-backend.html') Python Backend Development
+                li
+                  a(href='#team') Team
+                li
+                  a(href='#contact-area') Contact

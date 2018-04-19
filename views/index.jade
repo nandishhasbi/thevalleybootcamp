@@ -1,0 +1,345 @@
+extends layout
+
+block banner
+  .banner
+    h3(style='padding-top: 10%;')
+      br
+    div(style='background: rgba(0, 0, 0, 0.2);')
+      br
+      h3 Intensive Machine Learning and Python coding bootcamp in Bangalore
+      h2.test The Valley Bootcamp
+      h3 100% placement or money back
+      // <h4><a href="#apply" class="scroll" style="font-size: 80%;">Apply Now<span></span></a></h4>
+      br
+      .more(style='')
+        a(href='#apply', style='font-size: 130%;') Apply Now
+      br
+
+block content
+  #about.about
+    .container
+      .w3-about-head
+        h3 ABOUT US
+      .w3-agileitsline
+        h3
+          span "The Valley Bootcamp"
+          |  is an intensive coding bootcamp in Bangalore serving companies some hot
+          |                     talent!
+      // banner-bottom
+      .banner-bottom
+        .col-md-4.agileits_banner_bottom_left
+          .agileinfo_banner_bottom_pos
+            .w3_agileits_banner_bottom_pos_grid
+              .wthree_banner_bottom_grid_left
+                .agile_banner_bottom_grid_left_grid.hvr-radial-out
+                  i.fa.fa-laptop(aria-hidden='true')
+              .wthree_banner_bottom_grid_right
+                h4
+                  b Software engineer led training
+                p
+                  b Get trained by successful software engineers from the industry
+              .clearfix  
+        .col-md-4.agileits_banner_bottom_left1
+          .agileinfo_banner_bottom_pos
+            .w3_agileits_banner_bottom_pos_grid
+              .wthree_banner_bottom_grid_left
+                .agile_banner_bottom_grid_left_grid.hvr-radial-out
+                  i.fa.fa-check-square(aria-hidden='true')
+              .wthree_banner_bottom_grid_right
+                h4
+                  b 100% placement guaranteed
+                p
+                  b Or your money back!
+              .clearfix  
+        .col-md-4.agileits_banner_bottom_left2
+          .agileinfo_banner_bottom_pos
+            .w3_agileits_banner_bottom_pos_grid
+              .wthree_banner_bottom_grid_left
+                .agile_banner_bottom_grid_left_grid.hvr-radial-out
+                  i.fa.fa-money(aria-hidden='true')
+              .wthree_banner_bottom_grid_right
+                h4
+                  b Study Now, Pay Later option
+                p
+                  b Pay in easy monthy instalments after course completion
+              .clearfix  
+        .clearfix  
+
+      #programs.w3-services
+        .w3-services-head
+          h3 What we do
+        .w3-services-grids
+          .col-md-4
+          .col-md-4
+            img(src='images/new/we_do_companies.jpg', alt='Job Offer Steps')
+          .clearfix
+      // //services
+      // Courses
+      section#courses.news
+        .container
+          .heading
+            h3 Courses
+          .news-grids
+            .col-md-2
+            .col-md-4.news-grid1
+              img(src='images/new/python_ml_1x1.jpg', alt='Python Machine Learning')
+              .absolute
+                .absolute-left
+                  p.p1
+                    i.fa.fa-calendar-check-o(aria-hidden='true')
+                    |  20 May 2018
+                  .clearfix
+                .absolute-right
+                  p.left
+                    i.fa.fa-clock-o(aria-hidden='true')
+                    span.span1 8 weeks
+                  .clearfix
+                .clearfix
+              h3 Python + Machine Learning
+              p
+                | Learn Machine Learning and Backend Development using Python. You will be working with Tensorflow, PyTorch,
+                | Numpy, etc. Cloud technologies such as AWS EC2, DynamoDB, S3 Bucket. Build persistance using MongoDB
+                | and MySQL.
+              .more
+                a(href='python-machine-learning.html') read more
+            .col-md-4.news-grid1
+              img(src='images/new/python_1x1.jpg', alt='Python Web Services')
+              .absolute
+                .absolute-left
+                  p.p1
+                    i.fa.fa-calendar-check-o(aria-hidden='true')
+                    |  20 May 2018
+                  .clearfix
+                .absolute-right
+                  p.left
+                    i.fa.fa-clock-o(aria-hidden='true')
+                    span.span1 5 weeks
+                  .clearfix
+                .clearfix
+              h3 Python Backend Development
+              p
+                | Learn Python and become a full fledged Backend Developer. You will be working with Cloud technologies
+                | such as AWS EC2, DynamoDB, S3 Bucket. Build persistance using MongoDB and MySQL.
+              .more
+                a(href='python-backend.html') read more
+            .clearfix
+      // python modal
+      #pythonModal.modal.about-modal.fade(tabindex='-1', role='dialog')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span.span2(aria-hidden='true') ×
+              h4.modal-title  Python + Machine Learning 
+            .modal-body
+              .agileits-w3layouts-info
+                .col-md-3
+                .col-md-6
+                  img(src='images/new/python_3x2.jpg', alt='Python Web Services')
+                .clearfix
+                .col-md-4
+                .col-md-4
+                  h3 Classroom Bootcamp
+                  ul
+                    li
+                      b 80 hours of training
+                    li 8 weeks
+                    li Saturday and Sunday
+                    li 9:30 AM to 3 PM
+                    li Race Course Road / RT Nagar
+                    li
+                      b
+                        a(href='placement-assurance.html') Guaranteed placement or money back
+                .clearfix
+      // python modal
+      // python ML modal
+      #pythonMLModal.modal.about-modal.fade(tabindex='-1', role='dialog')
+        .modal-dialog(role='document')
+          .modal-content
+            .modal-header
+              button.close(type='button', data-dismiss='modal', aria-label='Close')
+                span.span2(aria-hidden='true') ×
+              h4.modal-title  Python Backend Development 
+            .modal-body
+              .agileits-w3layouts-info
+                .col-md-3
+                .col-md-6
+                  img(src='images/new/python_ml_3x2.jpg', alt='Pthon Machine Learning')
+                .clearfix
+                .col-md-4
+                .col-md-4
+                  h3 Classroom Bootcamp
+                  ul
+                    li
+                      b 50 hours of training
+                    li 5 weeks
+                    li Saturday and Sunday
+                    li 9:30 AM to 3 PM
+                    li Race Course Road / RT Nagar
+                    li
+                      b
+                        a(href='placement-assurance.html') Guaranteed placement or money back
+                .clearfix
+      // python ML modal
+      // our team
+      #team.team
+        .container
+          .w3ls-heading
+            h3 Team
+          .w3-team-grids
+            // <div class="col-sm-1"></div>
+            .col-md-3.chef.agile_team_grid
+              .agileits_w3layouts_team_grid
+                ul.agileinfo_social_icons
+                  li
+                    a(href='https://www.linkedin.com/in/nandeesh-hasbi-34157b45/')
+                      i.fa.fa-linkedin(aria-hidden='true')
+                img.img-responsive(src='images/new/nandish.jpg', alt='Nandish')
+              .w3-team-head
+                h3 Nandeesh
+                p
+                  | ex PayPal
+                  br
+                  | Boston
+            .col-md-3.chef.agile_team_grid
+              .agileits_w3layouts_team_grid
+                ul.agileinfo_social_icons
+                  li
+                    a(href='https://www.linkedin.com/in/sunil3590/')
+                      i.fa.fa-linkedin(aria-hidden='true')
+                img.img-responsive(src='images/new/sunil.jpg', alt='Sunil')
+              .w3-team-head
+                h3 Sunil
+                p
+                  | ex IBM Watson
+                  br
+                  | New York
+            .col-md-3.chef.agile_team_grid
+              .agileits_w3layouts_team_grid
+                ul.agileinfo_social_icons
+                  li
+                    a(href='https://www.linkedin.com/in/sankalpshettar/')
+                      i.fa.fa-linkedin(aria-hidden='true')
+                img.img-responsive(src='images/new/sankalp.jpg', alt='Sankalp')
+              .w3-team-head
+                h3 Sankalp
+                p
+                  | ex Barclays
+                  br
+                  | New York
+            .col-md-3.chef.agile_team_grid
+              .agileits_w3layouts_team_grid
+                ul.agileinfo_social_icons
+                  li
+                    a(href='https://www.linkedin.com/company/the-valley-bootcamp/')
+                      i.fa.fa-linkedin(aria-hidden='true')
+                img.img-responsive(src='images/new/teamx.jpg', alt='We are hiring', style='opacity: 0.4')
+              .w3-team-head
+                h3
+                  | We are
+                  br
+                  | hiring!
+            .clearfix
+      // //our team
+      // count
+    .count-agileits
+      .count-grids
+        .count-bgcolor-w3ls
+          .col-md-4.count-grid
+            i.fa.fa-graduation-cap(aria-hidden='true')
+            .count.hvr-bounce-to-bottom
+              .numscroller.numscroller-big-bottom(data-slno='1', data-min='0', data-max='3', data-delay='.5', data-increment='1') 3
+              span
+              h5 Completed Batches
+          .col-md-4.count-grid
+            i.fa.fa-clock-o(aria-hidden='true')
+            .count.hvr-bounce-to-bottom
+              .numscroller.numscroller-big-bottom(data-slno='1', data-min='0', data-max='240', data-delay='.5', data-increment='40') 240
+              span
+              h5 Hours Trained
+          .col-md-4.count-grid
+            i.fa.fa-user-plus(aria-hidden='true')
+            .count.hvr-bounce-to-bottom
+              .numscroller.numscroller-big-bottom(data-slno='1', data-min='0', data-max='26', data-delay='.5', data-increment='4') 26
+              span
+              h5 Students Trained
+          .clearfix
+      // count
+      // courses online
+      #apply.w3-edu-main.content
+        .w3-edu-head
+          h3 Apply Now!
+        .w3-online-edu-grids
+          .col-md-6.w3-online-course-grid
+            .w3-online-course-left-head
+              h3 6 slots remaining
+              h4 Apply Now
+            .agileits-timer
+              .clock
+                .column.days
+                  #days.timer
+                  .text DAYS
+                .timer.days
+                .column
+                  #hours.timer
+                  .text HOURS
+                .timer
+                .column
+                  #minutes.timer
+                  .text MINUTES
+                .timer
+                .column
+                  #seconds.timer
+                  .text SECONDS
+          .col-md-6.w3-edu-online-form.w3_mail_grids
+            h3 Your details
+            form#course_application
+              .w3_agile_mail_grid
+                input#form1_name(type='text', placeholder='Your Name', name='name')
+                input#form1_email(type='email', placeholder='Your Email', name='email')
+                input#form1_phone(type='tel', placeholder='Your Phone Number', name='phone')
+                select#category1(name='course')
+                  option(value='Python + Machine Learning') Python + Machine Learning
+                  option(value='Python Backend Development') Python Backend Development
+                textarea#form1_message(placeholder='Your Message', name='message')
+                input(type='submit', value='Send')
+          .clearfix
+      // Spacing For Footer
+      div(style='width: 100%; height: 50px;')
+
+    section#contact-area
+      #map
+      .contact-box
+        .row
+          .col-lg-7.col-md-12
+            .contact-us-info
+              h3 Contact Us
+              ul.contact-info
+                li
+                  i.icofont.icofont-location-pin
+                  a(target='_blank', href='https://goo.gl/maps/QdQvZH1rU7L2')
+                    p RT Nagar, Bangalore
+                li
+                  i.icofont.icofont-email
+                  p thevalleybootcamp@gmail.com
+                li
+                  i.icofont.icofont-ui-call
+                  p +91-9916778133
+    section
+      #partners.w3-edu-main.content
+        .w3-edu-head
+          h3 Partners
+        .row
+          .col-md-4
+          .col-sm-1
+            a(style='all:unset;', href='https://msg91.com/startups/?utm_source=startup-banner')
+              img.img-responsive(style='all:unset;', src='https://msg91.com/images/startups/msg91Badge.png', title='MSG91 - SMS for Startups', alt='Bulk SMS - MSG91')
+          .col-sm-1
+          .col-sm-1
+            a(style='all:unset;', href='http://lobotus.com')
+              img.img-responsive(style='all:unset;', src='images/new/lobotus.jpg', title='MSG91 - SMS for Startups', alt='Bulk SMS - MSG91')
+          .col-sm-1
+          .col-sm-1
+            a(style='all:unset;', href='https://squadm.com')
+              img.img-responsive(style='all:unset;', src='images/new/squadm.png', title='MSG91 - SMS for Startups', alt='Bulk SMS - MSG91')
+          .col-sm-3

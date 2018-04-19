@@ -33,8 +33,10 @@
 
     <!--// css -->
     <!-- font -->
-    <link href="//fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="//fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Montserrat+Alternates:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <!-- //font -->
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -44,8 +46,8 @@
     <script type="text/javascript" src="js/move-top.js"></script>
     <script type="text/javascript" src="js/easing.js"></script>
     <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event) {
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
                 event.preventDefault();
                 $('html,body').animate({
                     scrollTop: $(this.hash).offset().top
@@ -54,12 +56,12 @@
         });
     </script>
     <!-- //start-smoth-scrolling -->
-    
+
 
     <style type="text/css">
-    #toTop{
-        display: none !important;
-    }
+        #toTop {
+            display: none !important;
+        }
     </style>
 
     <!--[if lt IE 9]>
@@ -71,11 +73,11 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108365041-4"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-      gtag('config', 'UA-108365041-4');
+        gtag('config', 'UA-108365041-4');
     </script>
 
 </head>
@@ -90,15 +92,31 @@
                 <div class="row">
                     <div class="col-lg-6 col-md-6 text-md-left text-center mb-lg-0 mb-1">
                         <ul class="header-social d-inline-block">
-                            <li><a href="https://www.facebook.com/valleybootcampindia" target="_blank"><i class="icofont icofont-social-facebook"></i></a></li>
-                            <li><a href="https://www.linkedin.com/company/the-valley-bootcamp/"><i class="icofont icofont-social-linkedin"></i></a></li>
-                           	<li><a href="#"><i class="icofont icofont-social-instagram"></i></a></li>
+                            <li>
+                                <a href="https://www.facebook.com/valleybootcampindia" target="_blank">
+                                    <i class="icofont icofont-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/the-valley-bootcamp/">
+                                    <i class="icofont icofont-social-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="icofont icofont-social-instagram"></i>
+                                </a>
+                            </li>
                         </ul>
-                        <div class="address d-inline-block"><i class="icofont icofont-social-google-map mr-2"></i><a target="_blank" href="https://goo.gl/maps/QdQvZH1rU7L2">RT Nagar, Bangalore</a></div>
+                        <div class="address d-inline-block">
+                            <i class="icofont icofont-social-google-map mr-2"></i>
+                            <a target="_blank" href="https://goo.gl/maps/QdQvZH1rU7L2">RT Nagar, Bangalore</a>
+                        </div>
                     </div>
                     <div class="col-lg-6 col-md-6 text-center text-md-right">
                         <div class="email d-inline-block">
-                            <a href="mailto:thevalleybootcamp@gmail.com"><i class="fa fa-envelope-o mr-2"></i>thevalleybootcamp@gmail.com</a>
+                            <a href="mailto:thevalleybootcamp@gmail.com">
+                                <i class="fa fa-envelope-o mr-2"></i>thevalleybootcamp@gmail.com</a>
                         </div>
                         <div class="phone d-inline-block">
                             <i class="fa fa-phone mr-2"></i>+91-9916778133
@@ -107,94 +125,125 @@
                 </div>
             </div>
         </section>
-    <!-- End: Header Top
+        <!-- End: Header Top
         ============================= -->
-        
+
         <!-- Navigation Starts
             ========================= -->
-            <!-- Navigation Starts -->
-            <div class="navbar-area sticky-nav">
+        <!-- Navigation Starts -->
+        <div class="navbar-area sticky-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6">
+                        <div class="logo main">
+                            <a href="/" style="margin-top: 20px;">
+                                <img class="responsive" src="assets/img/logo.png" alt="Site Logo">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Nav -->
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <nav class="text-right main-menu">
+                            <ul>
+                                <li class="active">
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#about">About</a>
+                                </li>
+                                <li>
+                                    <a href="#courses">Courses
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="python-machine-learning.html">Python + Machine Learning</a>
+                                        </li>
+                                        <li>
+                                            <a href="python-backend.html">Python Backend Development</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#team">Team</a>
+                                </li>
+                                <li>
+                                    <a href="#contact-area">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <!-- Nav End -->
+
+                    <div class="col-lg-3 col-6">
+                        <div class="header-right-bar">
+                            <ul>
+                                <li class="book-now-btn">
+                                    <a class="book-now apply" href="#apply" style="background-color:#ec1935;color:#fff;">
+                                        <i class="fa fa-book"></i>Apply Now</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Start Mobile Menu -->
+            <div class="mobile-menu-area d-lg-none">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-6">
-                            <div class="logo main">
-                                <a href="/" style="margin-top: 20px;"><img class="responsive" src="assets/img/logo.png" alt="Site Logo"></a>
-                            </div>
-                        </div>
+                        <div class="col-md-12">
+                            <div class="mobile-menu" style="margin-top:25px;">
+                                <nav class="mobile-menu-active">
+                                    <ul>
+                                        <li class="active">
+                                            <a href="/">Home</a>
+                                        </li>
+                                        <li>
+                                            <a href="#about">About</a>
+                                        </li>
+                                        <li>
+                                            <a href="#courses">Courses
+                                                <i class="fa fa-angle-down"></i>
+                                            </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="python-machine-learning.html">Python + Machine Learning</a>
+                                                </li>
+                                                <li>
+                                                    <a href="python-backend.html">Python Backend Development</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="#team">Team</a>
+                                        </li>
+                                        <li>
+                                            <a href="#contact-area">Contact</a>
+                                        </li>
+                                    </ul>
+                                </nav>
 
-                        <!-- Nav -->
-                        <div class="col-lg-6 d-none d-lg-block">
-                            <nav class="text-right main-menu">
-                                <ul>
-                                    <li class="active">
-                                        <a href="#">Home</a>
-                                    </li>
-                                    <li><a href="#about">About</a></li>
-                                    <li><a href="#courses">Courses <i class="fa fa-angle-down"></i></a>
-                                        <ul>
-                                            <li><a href="python-machine-learning.html">Python + Machine Learning</a></li>
-                                            <li><a href="python-backend.html">Python Backend Development</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a href="#team">Team</a></li>
-                                    <li><a href="#contact-area">Contact</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <!-- Nav End -->
-
-                        <div class="col-lg-3 col-6">
-                            <div class="header-right-bar">                            
-                                <ul>
-                                    <li class="book-now-btn">
-                                        <a class="book-now apply" href="#apply" style="background-color:#ec1935;color:#fff;"><i class="fa fa-book"></i>Apply Now</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Start Mobile Menu -->
-                <div class="mobile-menu-area d-lg-none">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="mobile-menu" style="margin-top:25px;">
-                                    <nav class="mobile-menu-active" >
-                                        <ul>
-                                            <li class="active">
-                                                <a href="/">Home</a>
-                                            </li>
-                                            <li><a href="#about">About</a></li>
-                                            <li><a href="#courses">Courses <i class="fa fa-angle-down"></i></a>
-                                                <ul>
-                                                    <li><a href="python-machine-learning.html">Python + Machine Learning</a></li>
-                                                    <li><a href="python-backend.html">Python Backend Development</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="#team">Team</a></li>
-                                            <li><a href="#contact-area">Contact</a></li>
-                                        </ul>
-                                    </nav>
-
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- End Mobile Menu -->
             </div>
-            <!-- Navigation End -->
+            <!-- End Mobile Menu -->
+        </div>
+        <!-- Navigation End -->
 
         <!-- Navigation Ends
             ========================= -->
 
         <div class="banner">
-            <h3 style="padding-top: 10%;"><br></h3>
+            <h3 style="padding-top: 10%;">
+                <br>
+            </h3>
             <div style="background: rgba(0, 0, 0, 0.2);">
                 <br>
-                <h3 >Intensive Machine Learning and Python coding bootcamp in Bangalore</h3>
+                <h3>Intensive Machine Learning and Python coding bootcamp in Bangalore</h3>
                 <h2 class="test">The Valley Bootcamp</h2>
                 <h3>100% placement or money back</h3>
                 <!-- <h4><a href="#apply" class="scroll" style="font-size: 80%;">Apply Now<span></span></a></h4> -->
@@ -214,7 +263,9 @@
                 <h3>ABOUT US</h3>
             </div>
             <div class="w3-agileitsline">
-                <h3><span>"The Valley Bootcamp"</span> is an intensive coding bootcamp in Bangalore serving companies some hot talent!</h3>
+                <h3>
+                    <span>"The Valley Bootcamp"</span> is an intensive coding bootcamp in Bangalore serving companies some hot
+                    talent!</h3>
             </div>
             <!-- banner-bottom -->
             <div class="banner-bottom">
@@ -227,8 +278,12 @@
                                 </div>
                             </div>
                             <div class=" wthree_banner_bottom_grid_right">
-                                <h4><b>Software engineer led training</b></h4>
-                                <p><b>Get trained by successful software engineers from the industry</b></p>
+                                <h4>
+                                    <b>Software engineer led training</b>
+                                </h4>
+                                <p>
+                                    <b>Get trained by successful software engineers from the industry</b>
+                                </p>
                             </div>
                             <div class="clearfix"> </div>
                         </div>
@@ -243,8 +298,12 @@
                                 </div>
                             </div>
                             <div class=" wthree_banner_bottom_grid_right">
-                                <h4><b>100% placement guaranteed</b></h4>
-                                <p><b>Or your money back!</b></p>
+                                <h4>
+                                    <b>100% placement guaranteed</b>
+                                </h4>
+                                <p>
+                                    <b>Or your money back!</b>
+                                </p>
                             </div>
                             <div class="clearfix"> </div>
                         </div>
@@ -259,8 +318,12 @@
                                 </div>
                             </div>
                             <div class=" wthree_banner_bottom_grid_right">
-                                <h4><b>Study Now, Pay Later option</b></h4>
-                                <p><b>Pay in easy monthy instalments after course completion</b></p>
+                                <h4>
+                                    <b>Study Now, Pay Later option</b>
+                                </h4>
+                                <p>
+                                    <b>Pay in easy monthy instalments after course completion</b>
+                                </p>
                             </div>
                             <div class="clearfix"> </div>
                         </div>
@@ -301,18 +364,24 @@
                     <img src="images/new/python_ml_1x1.jpg" alt="Python Machine Learning" />
                     <div class="absolute">
                         <div class="absolute-left">
-                            <p class="p1"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 20 May 2018</p>
+                            <p class="p1">
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i> 20 May 2018</p>
                             <div class="clearfix"></div>
                         </div>
                         <div class="absolute-right">
-                            <p class="left"><i class="fa fa-clock-o" aria-hidden="true"></i> <span class="span1">8 weeks</span></p>
+                            <p class="left">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="span1">8 weeks</span>
+                            </p>
 
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <h3>Python + Machine Learning</h3>
-                    <p>Learn Machine Learning and Backend Development using Python. You will be working with Tensorflow, PyTorch, Numpy, etc. Cloud technologies such as AWS EC2, DynamoDB, S3 Bucket. Build persistance using MongoDB and MySQL.</p>
+                    <p>Learn Machine Learning and Backend Development using Python. You will be working with Tensorflow, PyTorch,
+                        Numpy, etc. Cloud technologies such as AWS EC2, DynamoDB, S3 Bucket. Build persistance using MongoDB
+                        and MySQL.</p>
                     <div class="more">
                         <a href="python-machine-learning.html">read more</a>
                     </div>
@@ -321,18 +390,23 @@
                     <img src="images/new/python_1x1.jpg" alt="Python Web Services" />
                     <div class="absolute">
                         <div class="absolute-left">
-                            <p class="p1"><i class="fa fa-calendar-check-o" aria-hidden="true"></i> 20 May 2018</p>
+                            <p class="p1">
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i> 20 May 2018</p>
                             <div class="clearfix"></div>
                         </div>
                         <div class="absolute-right">
-                            <p class="left"><i class="fa fa-clock-o" aria-hidden="true"></i> <span class="span1">5 weeks</span></p>
+                            <p class="left">
+                                <i class="fa fa-clock-o" aria-hidden="true"></i>
+                                <span class="span1">5 weeks</span>
+                            </p>
 
                             <div class="clearfix"></div>
                         </div>
                         <div class="clearfix"></div>
                     </div>
                     <h3>Python Backend Development</h3>
-                    <p>Learn Python and become a full fledged Backend Developer. You will be working with Cloud technologies such as AWS EC2, DynamoDB, S3 Bucket. Build persistance using MongoDB and MySQL.</p>
+                    <p>Learn Python and become a full fledged Backend Developer. You will be working with Cloud technologies
+                        such as AWS EC2, DynamoDB, S3 Bucket. Build persistance using MongoDB and MySQL.</p>
                     <div class="more">
                         <a href="python-backend.html">read more</a>
                     </div>
@@ -346,10 +420,12 @@
     <div class="modal about-modal fade" id="pythonModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header"> 
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>                      
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="span2" aria-hidden="true">&times;</span>
+                    </button>
                     <h4 class="modal-title"> Python + Machine Learning </h4>
-                </div> 
+                </div>
                 <div class="modal-body">
                     <div class="agileits-w3layouts-info">
                         <div class="col-md-3"></div>
@@ -361,12 +437,18 @@
                         <div class="col-md-4">
                             <h3>Classroom Bootcamp</h3>
                             <ul>
-                                <li><b>80 hours of training</b></li>
+                                <li>
+                                    <b>80 hours of training</b>
+                                </li>
                                 <li>8 weeks</li>
                                 <li>Saturday and Sunday</li>
                                 <li>9:30 AM to 3 PM</li>
                                 <li>Race Course Road / RT Nagar</li>
-                                <li><b><a href="placement-assurance.html">Guaranteed placement or money back</a></b></li>
+                                <li>
+                                    <b>
+                                        <a href="placement-assurance.html">Guaranteed placement or money back</a>
+                                    </b>
+                                </li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -381,10 +463,12 @@
     <div class="modal about-modal fade" id="pythonMLModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header"> 
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="span2" aria-hidden="true">&times;</span></button>                      
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span class="span2" aria-hidden="true">&times;</span>
+                    </button>
                     <h4 class="modal-title"> Python Backend Development </h4>
-                </div> 
+                </div>
                 <div class="modal-body">
                     <div class="agileits-w3layouts-info">
                         <div class="col-md-3"></div>
@@ -395,13 +479,19 @@
                         <div class="col-md-4"></div>
                         <div class="col-md-4">
                             <h3>Classroom Bootcamp</h3>
-                              <ul>
-                                <li><b>50 hours of training</b></li>
+                            <ul>
+                                <li>
+                                    <b>50 hours of training</b>
+                                </li>
                                 <li>5 weeks</li>
                                 <li>Saturday and Sunday</li>
                                 <li>9:30 AM to 3 PM</li>
                                 <li>Race Course Road / RT Nagar</li>
-                                <li><b><a href="placement-assurance.html">Guaranteed placement or money back</a></b></li>
+                                <li>
+                                    <b>
+                                        <a href="placement-assurance.html">Guaranteed placement or money back</a>
+                                    </b>
+                                </li>
                             </ul>
                         </div>
                         <div class="clearfix"></div>
@@ -423,7 +513,11 @@
                 <div class="col-md-3 chef agile_team_grid">
                     <div class="agileits_w3layouts_team_grid">
                         <ul class="agileinfo_social_icons">
-                            <li><a href="https://www.linkedin.com/in/nandeesh-hasbi-34157b45/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/nandeesh-hasbi-34157b45/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
                         <img src="images/new/nandish.jpg" alt="Nandish" class="img-responsive">
                     </div>
@@ -436,7 +530,11 @@
                 <div class="col-md-3 chef agile_team_grid">
                     <div class="agileits_w3layouts_team_grid">
                         <ul class="agileinfo_social_icons">
-                            <li><a href="https://www.linkedin.com/in/sunil3590/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/sunil3590/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
                         <img src="images/new/sunil.jpg" alt="Sunil" class="img-responsive">
                     </div>
@@ -449,7 +547,11 @@
                 <div class="col-md-3 chef agile_team_grid">
                     <div class="agileits_w3layouts_team_grid">
                         <ul class="agileinfo_social_icons">
-                            <li><a href="https://www.linkedin.com/in/sankalpshettar/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/sankalpshettar/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
                         <img src="images/new/sankalp.jpg" alt="Sankalp" class="img-responsive">
                     </div>
@@ -462,12 +564,17 @@
                 <div class="col-md-3 chef agile_team_grid">
                     <div class="agileits_w3layouts_team_grid">
                         <ul class="agileinfo_social_icons">
-                            <li><a href="https://www.linkedin.com/company/the-valley-bootcamp/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/company/the-valley-bootcamp/">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </li>
                         </ul>
                         <img src="images/new/teamx.jpg" alt="We are hiring" style="opacity: 0.4" class="img-responsive">
                     </div>
                     <div class="w3-team-head">
-                        <h3>We are<br>hiring!</h3>
+                        <h3>We are
+                            <br>hiring!</h3>
                     </div>
                 </div>
                 <div class="clearfix"></div>
@@ -571,36 +678,38 @@
         </div>
     </div>
     <!-- Spacing For Footer -->
-        <div style="width: 100%; height: 50px;"></div>
+    <div style="width: 100%; height: 50px;"></div>
 
 
     <!-- Start: Contact Us
         ============================= -->
 
-        <section id="contact-area">
-            <div id="map"></div>
-            <div class="contact-box">
-                <div class="row">
-                    <div class="col-lg-7 col-md-12">
-                        <div class="contact-us-info">
-                            <h3>Contact Us</h3>
-                            <ul class="contact-info">
-                                <li>
-                                    <i class="icofont icofont-location-pin"></i>
-                                    <a target="_blank" href="https://goo.gl/maps/QdQvZH1rU7L2"><p>RT Nagar, Bangalore</p></a>
-                                </li>
-                                <li>
-                                    <i class="icofont icofont-email"></i>
-                                    <p>thevalleybootcamp@gmail.com</p>
-                                </li>
-                                <li>
-                                    <i class="icofont icofont-ui-call"></i>
-                                    <p>+91-9916778133</p>
-                                </li>
-                            </ul>
-                        </div>
+    <section id="contact-area">
+        <div id="map"></div>
+        <div class="contact-box">
+            <div class="row">
+                <div class="col-lg-7 col-md-12">
+                    <div class="contact-us-info">
+                        <h3>Contact Us</h3>
+                        <ul class="contact-info">
+                            <li>
+                                <i class="icofont icofont-location-pin"></i>
+                                <a target="_blank" href="https://goo.gl/maps/QdQvZH1rU7L2">
+                                    <p>RT Nagar, Bangalore</p>
+                                </a>
+                            </li>
+                            <li>
+                                <i class="icofont icofont-email"></i>
+                                <p>thevalleybootcamp@gmail.com</p>
+                            </li>
+                            <li>
+                                <i class="icofont icofont-ui-call"></i>
+                                <p>+91-9916778133</p>
+                            </li>
+                        </ul>
                     </div>
-                    <!-- <div class="col-lg-7 col-md-12">
+                </div>
+                <!-- <div class="col-lg-7 col-md-12">
                         <div class="get-in-touch">
                             <h3>Get in Touch</h3>
                             <p>Feel free to contact us</p>
@@ -612,56 +721,73 @@
                             </form>
                         </div>
                     </div> -->
-                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- End: Contact Us
         ============================= -->
-    
+
     <!-- Start: Partners
         ============================= -->
-	<section>
+    <section>
         <div class="w3-edu-main content " id="partners">
             <div class="w3-edu-head">
                 <h3>Partners</h3>
-            </div>   
-   
+            </div>
+
             <div class="row">
                 <div class="col-md-4"></div>
-                <div class="col-sm-1"> <a style="all:unset;" href="https://msg91.com/startups/?utm_source=startup-banner"><img class="img-responsive" style="all:unset;" src="https://msg91.com/images/startups/msg91Badge.png" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a></div>
+                <div class="col-sm-1">
+                    <a style="all:unset;" href="https://msg91.com/startups/?utm_source=startup-banner">
+                        <img class="img-responsive" style="all:unset;" src="https://msg91.com/images/startups/msg91Badge.png"
+                            title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91">
+                    </a>
+                </div>
                 <div class="col-sm-1"></div>
-                <div class="col-sm-1"><a style="all:unset;" href="http://lobotus.com"><img class="img-responsive" style="all:unset;" src="images/new/lobotus.jpg" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a></div>
+                <div class="col-sm-1">
+                    <a style="all:unset;" href="http://lobotus.com">
+                        <img class="img-responsive" style="all:unset;" src="images/new/lobotus.jpg" title="MSG91 - SMS for Startups"
+                            alt="Bulk SMS - MSG91">
+                    </a>
+                </div>
                 <div class="col-sm-1"></div>
-                <div class="col-sm-1"><a style="all:unset;" href="https://squadm.com"><img class="img-responsive" style="all:unset;" src="images/new/squadm.png" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a></div>
+                <div class="col-sm-1">
+                    <a style="all:unset;" href="https://squadm.com">
+                        <img class="img-responsive" style="all:unset;" src="images/new/squadm.png" title="MSG91 - SMS for Startups"
+                            alt="Bulk SMS - MSG91">
+                    </a>
+                </div>
                 <div class="col-sm-3"></div>
             </div>
-        </div>      
-	</section>
+        </div>
+    </section>
     <!-- End: Partners
         ============================= -->
-    
+
     <!-- Start: Footer Copyright
         ============================= -->
 
-        <section id="footer-copyright">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="text-center">
-                            <p>©2018 All Rights Reserved - http://www.thevalleybootcamp.com/</p>
-                            <a href="#" class="scrollup"><i class="fa fa-arrow-up"></i></a>
-                        </div>
+    <section id="footer-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-center">
+                        <p>©2018 All Rights Reserved - http://www.thevalleybootcamp.com/</p>
+                        <a href="#" class="scrollup">
+                            <i class="fa fa-arrow-up"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
     <!-- End: Footer Copyright
         ============================= -->
-	<!-- Jquery -->
-	<script src="assets/js/jquery-3.2.1.min.js"></script>
-	
+    <!-- Jquery -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+
     <!-- //footer -->
     <!--  countdown-js -->
     <script type="text/javascript" src=" js/moment.js"></script>
@@ -674,7 +800,7 @@
     <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen">
     <!--//light-box-files -->
     <script type="text/javascript">
-        $(function() {
+        $(function () {
             $('.gallery a').Chocolat();
         });
     </script>
@@ -685,7 +811,7 @@
     <script type="text/javascript" src="js/jquery.transit.js"></script>
     <script type="text/javascript" src="js/jquery.textFx.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
+        $(document).ready(function () {
             $('.test').textFx({
                 type: 'fadeIn',
                 iChar: 100,
@@ -696,89 +822,86 @@
     <!-- //text-effect -->
     <script src="js/SmoothScroll.min.js"></script>
     <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event) {
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
                 event.preventDefault();
                 $('html,body').animate({
                     scrollTop: $(this.hash).offset().top
                 }, 1000);
             });
 
-        //Google form integration
-        var $form = $('#contact_form'),
-        url = 'https://script.google.com/macros/u/0/s/AKfycbzNCD00PvxU3GEw7rCaoCF1elByPUL2FZO5M3csJThX_L69sQ/exec'
-        $('#contact_submit').on('click', function(e) {
-            var name = $('#name').val();
-            var email = $('#email').val();
-            var message = $('#message').val();
+            //Google form integration
+            var $form = $('#contact_form'),
+                url = 'https://script.google.com/macros/u/0/s/AKfycbzNCD00PvxU3GEw7rCaoCF1elByPUL2FZO5M3csJThX_L69sQ/exec'
+            $('#contact_submit').on('click', function (e) {
+                var name = $('#name').val();
+                var email = $('#email').val();
+                var message = $('#message').val();
 
-            if(name == '')
-            {
-                alert('Please enter the name');
-                return false;
-            }else if(email == '')
-            {
-                alert('Please enter the email address');
-                return false;
-            }else if(message == '')
-            {
-                alert('Please enter the message');
-                return false;
-            }
+                if (name == '') {
+                    alert('Please enter the name');
+                    return false;
+                } else if (email == '') {
+                    alert('Please enter the email address');
+                    return false;
+                } else if (message == '') {
+                    alert('Please enter the message');
+                    return false;
+                }
 
 
-          var jqxhr = $.ajax({
-            url: url,
-            method: "GET",
-            dataType: "json",
-            data: $form.serializeObject()
-          }).success(
-            // do something
-            alert('Thank you! We have received your request.')
-		  );
-        });        
+                var jqxhr = $.ajax({
+                    url: url,
+                    method: "GET",
+                    dataType: "json",
+                    data: $form.serializeObject()
+                }).success(
+                    // do something
+                    alert('Thank you! We have received your request.')
+                );
+            });
 
         });
     </script>
 
     <script src="assets/js/popper.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.sticky.js"></script>
-        <script src="assets/js/owl.carousel.min.js"></script>
-        <script src="assets/js/jquery.shuffle.min.js"></script>
-        <script src="assets/js/jquery.counterup.min.js"></script>
-        <script src="assets/js/wow.min.js"></script>
-        <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.sticky.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
 
-        <!-- Smooth Scroll -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <!-- Smooth Scroll -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
 
-        <!-- Map Script -->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqoWGSQYygV-G1P5tVrj-dM2rVHR5wOGY"></script>
-        <script src="assets/js/map-script.js"></script>
+    <!-- Map Script -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqoWGSQYygV-G1P5tVrj-dM2rVHR5wOGY"></script>
+    <script src="assets/js/map-script.js"></script>
 
-        <!-- Custom Script -->
-        <script src="assets/js/custom.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/custom.js"></script>
 
-        <script type="text/javascript">
-            $(document).ready(function(){
-                var windows = $(window);
-                var stickSide = $(".navbar-area");
-                windows.on('scroll', function() {
-                    var scroll = windows.scrollTop();
-                    if (scroll < 100) {
-                        stickSide.addClass('add_top_margin');
-                        
-                    } else {
-                        stickSide.removeClass('add_top_margin');
-                    }
-                });
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var windows = $(window);
+            var stickSide = $(".navbar-area");
+            windows.on('scroll', function () {
+                var scroll = windows.scrollTop();
+                if (scroll < 100) {
+                    stickSide.addClass('add_top_margin');
+
+                } else {
+                    stickSide.removeClass('add_top_margin');
+                }
             });
-        </script>
+        });
+    </script>
 
-        <!-- Attach google spreadsheet linking -->
-        <script src='google-sheet.js'></script>
+    <!-- Attach google spreadsheet linking -->
+    <script src='google-sheet.js'></script>
 
 </body>
 
