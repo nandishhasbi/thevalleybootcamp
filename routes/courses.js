@@ -2,16 +2,17 @@ const express = require("express");
 const router = express.Router();
 const fs = require("fs");
 const path = require("path");
+const getCourses = require("../helpers/getCourses");
 
 const dataDirectory = path.join(__dirname, "..", "data");
 const courseDataFile = path.join(dataDirectory, "courses.json");
 
-/* GET home page. */
 router.get("/:name", function(req, res, next) {
-  fs.readFile(courseDataFile, (err, data) => {
+  getCourses((err, data) => {
     if (err) {
+      // This can be replaced with a call to a logging service
       console.log(err);
-      return res.status(500).send("Something went wrong.");
+      return;
     }
 
     let courses = data.toString("utf8");
@@ -19,16 +20,9 @@ router.get("/:name", function(req, res, next) {
 
     const course = courses[req.params.name];
 
-    if (!course) {
-      return res.redirect("/");
-    }
-
     res.render("courses", {
       courses,
       course,
-      page: {
-        title: req.params.name,
-      },
     });
   });
 });
