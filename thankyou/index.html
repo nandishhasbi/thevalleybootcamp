@@ -1,0 +1,326 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Valley Bootcamp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site Description Here">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            @media screen and (max-width:960px){
+                #home-sec{
+                    text-align:center;
+                }
+                #home-sec img{
+                    display:none;
+                }
+                .callback-sec{
+                    display: block!important;
+                }
+                
+                .bg-video{
+                    height:100%;
+                    left:0;
+                }
+                .bootcampimg{
+                    margin-top:0px;
+                }
+                .btn.btn--sm + .btn--sm {
+                    margin-left: 0em;
+                }
+            }
+            @media screen and (min-width:961px){
+                .bg-video{
+                    width:100%;
+                }
+                .feature-6:last-child, .feature-6:nth-last-child(1), .feature-6:nth-last-child(2){
+                    margin-bottom:0;
+                }
+            }
+            .bootcampimg{
+                margin-top:120px;
+            }
+            #home-sec h1{
+                font-size: 2.9em!important;
+            }
+            .callback-sec{
+                display: none;
+                width:50%;
+                z-index:1000;
+                position:fixed;
+                bottom:0px;
+            }
+            .callback-sec a{
+                width:100%;
+            }
+            .imagebg{
+                overflow:hidden;
+            }
+            .callback-sec.first{
+                left:0;
+            }
+            .callback-sec.sec{
+                right:0;
+            }
+            .bg-video{
+                position:absolute;
+                z-index:-100!important;
+                bottom:0;
+            }
+            .overlay{
+                background: rgba(2255,255,255,0.5);
+            }
+            .usp-img{
+                width: 80%;
+            }
+            .pad-20{
+                padding:15px 0px;
+            }
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+            }
+        </style>
+    </head>
+    <body class=" ">
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="img/logo.png" />
+                                <img class="logo logo-light" alt="logo" src="img/logo.png" />
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs bar--absolute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo.png" />
+                                    <img class="logo logo-light" alt="logo" src="img/logo.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                               
+                            </div>
+                            
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section id="home-sec">
+                <div class="container">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-md-6">
+                            <h1>
+                                   Thank you for contacting us. We will reach you soon.
+                            </h1>
+                            <p class="lead">
+                            </p>
+                        </div>
+                        <div class="col-6">
+                            <img alt="Image" src="img/homebanner2.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+         
+            <footer class="text-center-xs space--xs bg--dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#about-sec">
+                                        <span class="h6 type--uppercase">About</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#course-sec">
+                                        <span class="h6 type--uppercase">Course</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#team-sec">
+                                        <span class="h6 type--uppercase">Team</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 text-right text-center-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="https://www.linkedin.com/company/the-valley-bootcamp/">
+                                        <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/valleybootcampindia/">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-md-10">
+                            <span class="type--fine-print">&copy;
+                                <span class="update-year"></span> The Valley Bootcamp</span>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <a class="type--fine-print" href="#"> thevalleybootcamp@gmail.com </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <div class="callback-sec first">
+            <a class="btn btn--sm btn--primary type--uppercase" href="tel:+919964519768">
+                <span class="btn__text">
+                    Call Us
+                </span>
+            </a>
+        </div>
+        <div class="callback-sec sec">
+            <a class="btn btn--sm btn--primary type--uppercase" href="#contact-sec">
+                <span class="btn__text">
+                    Request Call Back
+                </span>
+            </a>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="thevalleybootcamp_6081588018937856" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://thevalleybootcamp.agilecrm.com/forms/6081588018937856">online form</a></span></div>
+            </div>
+        </div>
+        <div id="myModal1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="thevalleybootcamp_5240632679989248" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://thevalleybootcamp.agilecrm.com/forms/5240632679989248">online form</a></span></div>
+            </div>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script id="_agile_min_js" async type="text/javascript" src="https://thevalleybootcamp.agilecrm.com/stats/min/agile-min.js"> </script>
+        <script type="text/javascript" >
+        var Agile_API = Agile_API || {}; Agile_API.on_after_load = function(){
+        _agile.set_account('4aq115q7vkfbor18a97gh628f7', 'thevalleybootcamp', false);
+        _agile.track_page_view();
+        _agile_execute_web_rules();};
+        </script>
+        <script>
+            function createContact(){
+                var email_recieved  = document.getElementById("emailid").value;
+                var contact = {};
+                    contact.name = document.getElementById("username").value;
+                    contact.email = email_recieved;
+                    contact.message = document.getElementById("msg").value;
+                    _agile.create_contact(contact, {
+                        success: function (data) {
+                            // Set Email at success of contact creation. But you can set it at failure too.
+                            _agile.set_email(email_recieved);
+                            location.href="thankyou.html";
+                            console.log("Response = "+data);
+                        },
+                        error: function (data) {
+                            
+                            alert("error");
+                            console.log("Error Cause = "+data);
+                        }
+                    });
+                }
+        </script>
+    </body>
+</html>
