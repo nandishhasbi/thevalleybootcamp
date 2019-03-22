@@ -33,8 +33,7 @@ $("#contact_form").submit(function(event) {
     // Callback handler that will be called on success
     request.done(function(response, textStatus, jqXHR) {
         // Log a message to the console
-        alert('Thank you for your query. We have received your request and we will revert back shortly.');
-        window.location.href = 'http://www.thevalleybootcamp.com/';
+        window.location.href = 'thankyou/index.html';
     });
 
     // Callback handler that will be called on failure
@@ -108,7 +107,7 @@ $("#course_application").submit(function(event) {
     // Callback handler that will be called on success
     request.done(function(response, textStatus, jqXHR) {
         // Log a message to the console
-        alert('Thank you for showing your interest. We will contact you shortly.');
+        window.location.href = 'thankyou/index.html';
     });
 
     // Callback handler that will be called on failure
