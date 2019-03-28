@@ -708,6 +708,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                         <input type="text" id="username" name="name" class="validate-required" />
                                     </div>
                                     <div class="col-md-6 col-12">
+                                        <label>Phone Number:</label>
+                                        <input type="number" id="phoneno" name="phoneno" class="validate-required" />
+                                    </div>
+                                    <div class="col-md-12 col-12">
                                         <label>Email Address:</label>
                                         <input type="email" id="emailid" name="email" class="validate-required validate-email" />
                                     </div>
@@ -834,8 +838,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             function createContact(){
                 var email_recieved  = document.getElementById("emailid").value;
                 var contact = {};
-                    contact.name = document.getElementById("username").value;
+                    contact.first_name = document.getElementById("username").value;
                     contact.email = email_recieved;
+                    contact.phone = document.getElementById("phoneno").value;
                     contact.message = document.getElementById("msg").value;
                     _agile.create_contact(contact, {
                         success: function (data) {
