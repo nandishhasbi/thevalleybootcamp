@@ -12,10 +12,14 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link  href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i"  rel="stylesheet" type="text/css" />
  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
 <style amp-custom>body{font-family:'Roboto', sans-serif; font-size:13px; }
 
-/*Color Schemes and Colors*/
+
+
+
+/*Color Schemes and Colors */
 
 .bg-teal-light{ background-color: #1abc9c; color:#FFFFFF}
 .bg-teal-dark{  background-color: #16a085; color:#FFFFFF}
@@ -516,7 +520,7 @@ header{
 }
 
 .header-icon-2{right:0px; top:0px;}
-.header-icon-1{left:0px; top:0px; cursor:pointer;}
+.header-icon-1{left:0px; top:0px; cursor:pointer;    z-index: 9;}
 
 .header-logo{ 
 	margin:15px auto 0; 
@@ -739,6 +743,7 @@ header{
 	font-size:20px;
 	position:relative;
 	z-index:10;
+     text-align: left;
 	 
 }
 
@@ -1672,7 +1677,7 @@ h4 {
     padding-left: 40px;
     padding-right: 40px;
 }
-.retina-logo{    left: 100px;}
+.retina-logo{ text-align: center;}
 .heading-block h1{
    text-align:center; 
        margin-bottom: 0;
@@ -1829,6 +1834,7 @@ h4 {
 }
  .heading-block h3{
     font-size: 22px;
+
 }
 .heading-block h3 + span, .heading-block h4 + span {
     font-size: 17px;
@@ -1846,7 +1852,7 @@ h4 {
     margin-bottom: 0;
     color:#fff;
     text-align: center;
-    width: 240px;
+  
     margin-top: -200px;
 }
  
@@ -1895,20 +1901,24 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
     font-size: 20px;
     font-weight: 300;
 }
-  .menu2 ul{margin-top: 20px;margin-left:60px;width: 210px;}
+.menu2{text-align: right;}
+  .menu2 ul{  
+    text-align: left;
+    width: 100%;
+} 
  .menu2 ul li{  background-color: #48977d; }
   .menu2 ul li a{ color: #fff;}
  .menu2 section h3{   
      background-color:#5bbc9d;
-    padding-right: 20px;
+  
     border: 0px solid #dfdfdf;
-    left: 110px;
+     
     top: 15px;
     color: #fff;
     font-size: 15px;
 }
 .menu2 section ul li{
-    height: 40px;
+    
     line-height: 40px;
     margin: 0;
     padding: 0 15px;
@@ -1932,8 +1942,8 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
  
 		<ul class="menu">
             
-           <li><a href="home.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
-           <li><a href="about.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Know More</a></li> 
+           <li><a href="../index.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Home</a></li>
+           <li><a href="../about.html"><i class="fa fa-angle-right" aria-hidden="true"></i>Know More</a></li> 
            <li class="sidebar-parent-container">
 
 
@@ -1943,9 +1953,9 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
               <h3> <i class="fa fa-angle-right" aria-hidden="true"></i>Courses</h3>
               <ul class="ampstart-dropdown-items list-reset m0 p0">
-                <li class="ampstart-dropdown-item"><a href="machinelearning.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                              Python + Machine Learning                                         </a></li>
-                        <li><a href="python.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                              Python Backend Developer                                         </a></li>
-                        <li><a href="fullstack.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                              Full Stack Web Developer.                                         </a></li>
+                <li class="ampstart-dropdown-item"><a href="../machinelearning.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                              Python + Machine Learning                                         </a></li>
+                        <li><a href="../python.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                              Python Backend Developer                                         </a></li>
+                        <li><a href="../fullstack.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                              Full Stack Web Developer.                                         </a></li>
               </ul>
             </section>
                       
@@ -1955,7 +1965,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                                 
                             
             			
-            			<li><a href="contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                      Contact Us                                 </a></li>
+            			<li><a href="../contact.html"><i class="fa fa-angle-right" aria-hidden="true"></i>                                      Contact Us                                 </a></li>
             		</ul>
 		 
 		<div class="sidebar-deco"></div>
@@ -1993,10 +2003,11 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                     <div class="menu-title">Explore <span>The Valley</span></div>
  
+
                         <!-- Start Dropdown -->
                         <amp-accordion layout="container" disable-session-states="" class="menu2">
                         <section>
-                          <h3><i class="fa fa-navicon"></i></h3>
+                          <h3  ><i class="fa fa-navicon"></i></h3>
                           <ul >
                                
                               <li>
@@ -2111,7 +2122,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                         <div class="row clearfix">
 
-                            <amp-img src="../images/about/homesal1.jpg"   height="172"></amp-img>
+                            <amp-img src="../images/about/homesal1.jpg"   height="172"  ></amp-img>
                              
 
                             <div class="col-md-7 col-padding">
@@ -2137,7 +2148,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                                         <div class="col-lg-6">
                                             <amp-img class="image-center" src="../images/about/pythonsalary.jpg"
-                                                alt="Best bootcamp in Bangalore | thevalleybootcamp" width="230" height="172"></amp-img>
+                                                alt="Best bootcamp in Bangalore | thevalleybootcamp" width="335px" height="252px" layout="responsive"></amp-img>
                                         </div>
 
                                     </div>
@@ -2171,7 +2182,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                                         <div class="col-lg-6">
                                             <amp-img  class="image-center" src="../images/appshowcase/jssalary.png"
-                                                alt="Top rated coding classes in Bangalore | The Valley Bootcamp" width="230" height="172"></amp-img>
+                                                alt="Top rated coding classes in Bangalore | The Valley Bootcamp" width="230" height="172" layout="responsive"></amp-img>
                                         </div>
 
                                     </div>
@@ -2179,9 +2190,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                                 </div>
                             </div>
 
-                            <div class="col-md-5 col-padding d-none d-md-block d-lg-block d-xl-block"
-                                style="background: url('images/about/homesal2.jpg') center center no-repeat; background-size: cover;">
-                            </div>
+                            
 
                         </div>
 
@@ -2197,7 +2206,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                             <div class="col_one_third nobottommargin center">
                                 <a href="#"><amp-img  src="../images/appshowcase/s1.png"
                                         alt="Best bootcamp in Bangalore | Learn coding in Bangalore | thevalleybootcamp"
-                                        class="bottommargin-sm small-image-center" width="128" height="128"></amp-img></a>
+                                        class="bottommargin-sm small-image-center" width="128" height="128"  ></amp-img></a>
                                 <h4>Learn at Valley</h4>
                                 <p>At valley, you will undergo a stringent hands on coding exercise in the supervision
                                     of some renowned instructors. Get ready to put your coding hat on.</p>
@@ -2206,7 +2215,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                             <div class="col_one_third nobottommargin center">
                                 <a href="#"><amp-img src="../images/appshowcase/s4.png"
                                         alt="Learn coding in Bangalore | Bootcamp | The Valley Bootcamp"
-                                        class="bottommargin-sm small-image-center" width="128" height="128"></amp-img></a>
+                                        class="bottommargin-sm small-image-center" width="128" height="128"  ></amp-img></a>
                                 <h4>Placement Training</h4>
                                 <p>The moment you finish learning in the bootcamp, we directly start your placement
                                     training. This is again instructor led. We know what is usually asked in the
@@ -2216,7 +2225,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                             <div class="col_one_third nobottommargin center col_last">
                                 <a href="#"><amp-img src="../images/appshowcase/s5.png"
                                         alt="Top rated coding classes in Bangalore | The Valley Bootcamp"
-                                        class="bottommargin-sm small-image-center" width="128" height="128"></amp-img></a>
+                                        class="bottommargin-sm small-image-center" width="128" height="128"  ></amp-img></a>
                                 <h4>Post Valley Bootcamp</h4>
                                 <p>We provide students support once they get placed too. You will have access to our
                                     instructors, study materials etc even after you graduate.</p>
@@ -2226,9 +2235,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                         <div class="section nobottommargin" id="courses">
 
-                            <div class="d-none d-lg-block"
-                                style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: transparent url('images/appshowcase/pmi.png') bottom right no-repeat;">
-                            </div>
+                             
 
                             <div class="container clearfix" style="z-index: 1;">
 
@@ -2254,7 +2261,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                                         course will start with a discussion of how machine learning
                                         is different than descriptive statistics.</p>
 
-                                    <a href="machinelearning.html"
+                                    <a href="../machinelearning.html"
                                         class="button button-border button-rounded button-large button-dark noleftmargin">Know
                                         the Curicullum</a>
 
@@ -2271,7 +2278,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                                     <amp-img src="../images/appshowcase/iphone-solid.png"
                                         alt="Highest rated bootcamp in Bangalore | Coding Classes | thevalleybootcamp"
-                                        class="center-block image-center" width="230" height="172"></amp-img>
+                                        class="center-block image-center" width="230" height="172" layout="responsive"></amp-img>
 
                                 </div>
 
@@ -2291,7 +2298,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                                         and we also teach some basics in cloud computing like EC2, dynamoDb, RDS, S3
                                         etc.</p>
 
-                                    <a href="python.html"
+                                    <a href="../python.html"
                                         class="button button-border button-rounded button-large button-dark noleftmargin">Know
                                         the Curicullum</a>
 
@@ -2301,10 +2308,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                         </div>
 
                         <div class="section notopmargin nobottommargin">
-
-                            <div class="d-none d-lg-block"
-                                style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;background: transparent url('images/appshowcase/fullstack.png') bottom right no-repeat;">
-                            </div>
+ 
 
                             <div class="container clearfix" style="z-index: 1;">
 
@@ -2322,7 +2326,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                                         We will go through how a rest api works, how APIs are used all over the web
                                         today to power multi-platform applications and build a few along the way.</p>
 
-                                    <a href="fullstack.html"
+                                    <a href="../fullstack.html"
                                         class="button button-border button-rounded button-large button-dark noleftmargin">Know
                                         the Curicullum</a>
 
@@ -2431,7 +2435,7 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                             <div class="col_full center topmargin nobottommargin">
 
-                                <amp-img src="../images/about/propelld.png" alt="Propelld Logo" width="255" height="53" class="image-center"></amp-img>
+                                <amp-img src="../images/about/propelld.png" alt="Propelld Logo" width="255" height="53" class="image-center" layout="responsive"></amp-img>
 
                             </div>
 
