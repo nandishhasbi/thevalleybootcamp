@@ -12,7 +12,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link  href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700|Raleway:300,400,500,600,700|Crete+Round:400i"  rel="stylesheet" type="text/css" />
  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
-
+  <link rel="stylesheet" href="../css/font-icons.css" type="text/css" />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,user-scalable=no"><meta name="apple-mobile-web-app-capable" content="yes"/><meta name="apple-mobile-web-app-status-bar-style" content="black">
 <style amp-custom>body{font-family:'Roboto', sans-serif; font-size:13px; }
 
@@ -736,6 +736,7 @@ header{
     padding: 80px 0;
 }
 .heading-block{
+	margin-top: 30px;
 	margin-bottom: 50px
 }
 
@@ -1049,7 +1050,104 @@ section[expanded] .fa-chevron-down{	transform:rotate(180deg);}
     outline: none;
 }
 
+.bgicon {
+    display: block;
+    position: absolute;
+    bottom: -60px;
+    right: -110px;
+    font-size: 210px;
+    color: rgba(0,0,0,0.1);
+}
 
+.pricing-box.pricing-extended {
+    background-color: #FFF;
+    text-align: left;
+}
+
+.pricing-box {
+    position: relative;
+    border: 1px solid rgba(0,0,0,0.075);
+    border-radius: 3px;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #F5F5F5;
+}
+.pricing-box.pricing-extended .pricing-desc, .pricing-box.pricing-extended .pricing-action-area {
+    position: relative;
+    float: none;
+    width: auto;
+    padding: 25px;
+}
+.pricing-box.pricing-extended .pricing-title {
+    background-color: transparent;
+    padding-top: 0;
+    text-align: left;
+}
+
+.pricing-title {
+    padding: 15px 0;
+    background-color: #F9F9F9;
+    border-radius: 3px 3px 0 0;
+    text-shadow: 1px 1px 1px #FFF;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.pricing-title h3 {
+    margin: 0;
+    font-size: 20px;
+ 
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555;
+}
+.pricing-box.pricing-extended .pricing-features ul {
+    padding: 15px 0 0 0;
+}
+
+.pricing-features ul {
+    margin: 0;
+    padding: 15px 0;
+    list-style: none;
+}
+.pricing-box.pricing-extended .pricing-action-area {
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: 0;
+    width: 25%;
+    height: 100%;
+    border-left: 1px solid rgba(0,0,0,0.05);
+    background-color: #F9F9F9;
+    padding: 30px;
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+}
+.pricing-box.pricing-extended .pricing-desc, .pricing-box.pricing-extended .pricing-action-area {
+    position: relative;
+    float: none;
+    width: auto;
+    padding: 25px;
+}
+.pricing-box.pricing-extended .pricing-action-area {
+    height: auto;
+    border-left: 0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-radius: 0 0 3px 3px;
+}
+.pricing-price {
+    position: relative;
+    padding: 25px 0;
+    color: #333;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 1;
+} 
+.pricing-price span {
+    display: inline-block;
+    vertical-align: top;
+    margin: 7px 3px 0 0;
+    font-size: 28px;
+    font-weight: normal;
+}
 
 /*Dropcaps*/
 
@@ -1117,27 +1215,39 @@ ol, ul{line-height:24px; margin-left:20px;}
 .blockquote-4 p{padding-left:50px;}
 
 /*Buttons*/
-.button{
-	display:inline-block;
-	padding:13px 20px;
-	margin:0px 0px 10px 0px;
-	font-size:12px;
-	transition:all 250ms ease;
+.button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 5px;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #1ABC9C;
+    color: #FFF;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.button.button-rounded {
+    border-radius: 3px;
 }
 
-.button-3d{
-	display:inline-block;
-	padding:12px 20px;
-	margin:0px 0px 10px 0px;
-	font-size:12px;
-	transition:all 250ms ease;
-	border-right:none;
-	border-left:none;
-	border-top:none;
-	border-width:4px;
+.button.button-xlarge {
+    padding: 0 32px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    height: 52px;
+    line-height: 52px;
 }
 
-.button-round{border-radius:30px;}
+ 
+
 .button-full{display: block; text-align: center;}
 .button-center{width:130px; margin-left:auto; margin-right:auto; display:block; text-align:center;}
 .button:hover{opacity:0.9; transition:all 250ms ease;}
@@ -1633,7 +1743,7 @@ ol, ul{line-height:24px; margin-left:20px;}
 
 /*custom style*/
 
- .home-bg1 { background-image: url('../images/slider/swiper/1.jpg'); padding: 200px 0;height: 300px;margin-top:-100px;}
+ .home-bg1 { background-image: url('../images/slider/swiper/2.jpg'); padding: 200px 0;height: 300px;margin-top:-100px;}
  .testimonial-img-background { background-image: url('../images/about/me-parallax.jpg'); padding: 200px 0;}
  .parallax {
     background-color: transparent;
@@ -1697,7 +1807,10 @@ h4 {
     margin-top: 10px;
     font-weight: 300;
     color: #777;
-    font-size: 20px;
+    font-size: 18px;
+}
+.dark, .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6,  .dark p {
+    color: #EEE;
 }
 .center .heading-block:after, .heading-block.center:after, .heading-block.title-center:after {
     margin: 30px auto 30px;
@@ -1729,7 +1842,9 @@ h4 {
     background: transparent;
     padding: 0 0 10px;
     border-bottom: 2px solid #1ABC9C;
+
 }
+.fancy-title h3{margin:30px;}
  h1 > span:not(.nocolor):not(.badge), h2 > span:not(.nocolor):not(.badge), h3 > span:not(.nocolor):not(.badge), h4 > span:not(.nocolor):not(.badge), h5 > span:not(.nocolor):not(.badge), h6 > span:not(.nocolor):not(.badge) {
     color: #1ABC9C;
 }
@@ -1842,24 +1957,48 @@ h4 {
 #subscribe > div.heading-block.center > span > a{text-decoration: none;
     color: #1ABC9C;}
 
-
+.slider-caption{text-align: center;}
 .slider-caption h2 {
-    font-size: 4rem;
+    font-size: 40px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 0;
-    color:#fff;
-    text-align: center;
-  
-    margin-top: -200px;
-}
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color:rgba(255,255,255,0.9);
  
- /*.sidebar-parent-container i{padding-left: 10px;}*/
+  
+    margin-top: -150px;
+}
+.slider-caption span{
+	font-size: 22px;
+	margin-top: 10px;
+    font-weight: 300;
+     
+     color:rgba(255,255,255,0.9);
+         font-family: 'Lato', sans-serif;
+}
+
+ 
+.breadcrumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    list-style: none; 
+    border-radius: 0.25rem;
+    margin-top: 10px;
+}
+.breadcrumb li{    padding-left:20px; color:rgba(255,255,255,0.9);}
+.breadcrumb li a{ color:rgba(255,255,255,0.9);}
+ 
+ .sidebar-parent-container {margin-top: -50px;}
 #sidebar .menu li amp-accordion h3{
      background-color: #fff;  
-   
+   margin-top: 50px;
       border: 0px solid #dfdfdf;  
           color: #2e2e2e;
     font-size: 14px;
@@ -1924,6 +2063,94 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
     padding: 0 15px;
     border-radius: 0;
 }
+
+
+.fbox-desc{margin-top: 30px;}
+.feature-box h3 {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+    color: #333;
+     
+}
+ 
+ #valley > div > div  > div > h3 {margin-left: 80px;}
+ #valley > div > div > div > p{margin-left: 40px;}
+ 
+.feature-box h3 span.subtitle {
+    display: block;
+    margin-top: 5px;
+    color: #444;
+    font-weight: 300;
+    text-transform: none;
+    margin-bottom: 20px;
+}
+.feature-box p{    color: #999;}
+
+.feature-box .fbox-icon {
+    display: block;
+    position: absolute;
+    width: 64px;
+    height: 64px;
+    top: 0;
+    left: 0;
+}
+.feature-box.fbox-plain .fbox-icon i {
+    font-size: 48px;
+    line-height: 1;
+}
+.feature-box.fbox-plain .fbox-icon i, .feature-box.fbox-plain .fbox-icon img {
+    border: none;
+    background-color: transparent;
+    color: #1ABC9C;
+    border-radius: 0;
+}
+
+.social-icon.si-small {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+        margin-bottom: 50px;
+    margin-left: 150px;
+}
+
+.si-light {
+    background-color: rgba(0,0,0,0.05);
+    color: #666;
+    border-color: transparent;
+}
+.si-rounded {
+    border-radius: 50%;
+}
+
+
+.course-accordion {
+	border: 1px solid #dfdfdf;
+	 
+	border-radius: 5px;
+}
+.course-accordion h5{
+	padding: 10px;
+}
+.course-accordion section h2{
+	    background-color: #fff;
+    padding-right: 20px;
+    border: 0px solid #dfdfdf;
+    font-size: 14px;
+        font-weight: bold;
+        color: #444;
+        line-height: 44px;
+    padding: 0 15px 0 20px;
+        border-bottom: 1px dotted #ccc;
+}
+.course-accordion ul ,p, .acc_content{
+	     padding: 10px 15px 15px 36px
+}
+
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 </head>
@@ -1984,8 +2211,13 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
 
                     <div class="container clearfix">
                         <div class="slider-caption slider-caption-center" style="transform: translateY(0px); opacity: 1; top: 244px;">
-                            <h2 data-animate="fadeInDown">Welcome to the Next Gen Coding classes</h2>
-                             
+                            <h2 data-animate="fadeInDown">PYTHON + MACHINE LEARNING</h2>
+                            <span>Learn Machine Learning and become an expert</span> 
+                             <ol class="breadcrumb">
+			                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+			                    <li class="breadcrumb-item"><a href="courses.html">Courses</a></li>
+			                    <li class="breadcrumb-item active" aria-current="page">Python + Machine Learning</li>
+			                </ol>
                     </div>
 
                 </div>
@@ -2011,34 +2243,34 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
                           <ul >
                                
                               <li>
-                                <a href="#header" data-href="#header">
-                                    <div>Home</div>
+                                <a href="#sneakpeak" data-href="#sneakpeak">
+                                    <div>Sneak Peak</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="#section-about" data-href="#section-about">
-                                    <div>Highest Rated Bootcamp In Bangalore</div>
+                                <a href="#valley" data-href="#valley">
+                                    <div>The Valley Experience</div>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#experience" data-href="#experience">
-                                    <div>The Valley Experience</div>
+                                <a href="#curriculum" data-href="#curriculum">
+                                    <div>Curriculum/div>
                                 </a>
                             </li>
                             <li>
-                                <a href="#courses" data-href="#courses">
-                                    <div>Courses</div>
+                                <a href="#syllabus" data-href="#syllabus">
+                                    <div>Syllabus</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="#section-testimonials" data-href="#section-testimonials">
-                                    <div>Testimonials</div>
+                                <a href="#placement" data-href="#placement">
+                                    <div>Placement Assistance</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="#subscribe" data-href="#subscribe">
-                                    <div>Subscribe</div>
+                                <a href="#details" data-href="#details">
+                                    <div>Course Details</div>
                                 </a>
                             </li>
                           </ul>
@@ -2051,422 +2283,624 @@ body:not(.sticky-responsive-pagemenu) #page-menu #page-menu-wrap {
             </div>
 
         </div>
- 
-  <!-- Content
-        ============================================= -->
-        <section id="content">
+  
 
-            <div class="content-wrap nopadding">
 
-                <section id="section-about" class="page-section section nobg nomargin">
+
+<div class="container clearfix">
+
+            <div class="row clearfix">
+
+                <div class="col-md-12 col-padding">
+                    <div>
+                        <div class="">
+                            <amp-img src="../images/appshowcase/python.png" width="255" height="56" layout="responsive"></amp-img>
+                        </div>
+
+                        <div class="row clearfix">
+
+                            <div class="col-lg-6">
+                                <p>Machine learning is an application of artificial intelligence (AI) that provides systems the ability to automatically learn and improve from experience without being explicitly programmed. Machine learning focuses on the
+                                    development of computer programs that can access data and use it learn for themselves. The process of learning begins with observations or data, such as examples, direct experience, or instruction, in order to look
+                                    for patterns in data and make better decisions in the future based on the examples that we provide. The primary aim is to allow the computers learn automatically without human intervention or assistance and adjust actions
+                                    accordingly.
+                                </p>
+                                <p>Machine Learning is no longer just a niche subfield of computer science but technology giants have been using it for years – Machine learning algorithms power Walmart product recommendations, surge pricing at Uber, fraud
+                                    detection at top financial institutions, content that Twitter, LinkedIn, Facebook and Instagram display on social media feeds or Google Maps. Machine learning products are being used daily, perhaps without realizing
+                                    it. The future of machine learning is already here, it’s just that machine learning career is exploding now because of smart algorithms being used everywhere from email to mobile apps to marketing campaigns. If you
+                                    are in search of the most in-demand and most-exciting career domains, gearing up yourself with machine learning skills is a good move now.</p>
+
+                                    <p></p><address>
+                                            <strong>Python + Machine Learning Average Salary:
+                                            </strong> <p><br>INR 8,00,000/- to INR 15,00,000/- <br></p>
+                                        </address>
+                                    <p></p>
+
+
+                            </div>
+
+                            <div class="col-lg-6">
+                                <amp-img src="../images/appshowcase/mlsalary.png" width="255" height="200" layout="responsive"></amp-img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+        <section id="content" style="margin-bottom: 0px;">
+            <section id="sneakpeak">
+                <div class="content-wrap">
+
                     <div class="container clearfix">
-
-                        <div class="heading-block bottommargin-lg center">
-                            <h1>Highest Rated Bootcamp In Bangalore</h1>
-                            <span>The Valley Bootcamp is an intensive coding bootcamp in Bangalore. We teach you to
-                                code, We teach you to solve problems, We help you become kickass software
-                                developers.</span>
+                        <div class="col_one_third nobottommargin">
+                            <div class="feature-box media-box">
+                                <div class="fbox-media">
+                                    <amp-img src="../images/services/1.jpg" alt="Why choose Us?" width="345" height="216" layout="responsive"></amp-img>
+                                </div>
+                                <div class="fbox-desc">
+                                    <h3>Get your fundamentals right.<span class="subtitle">Because we are Reliable.</span></h3>
+                                    <p>All our mentors have more than 15 years of combined experience. We at valley help you understand programming right from the basic. So even if you new to programming, dont worry we have everything that you want for success.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="col_one_third">
-
-                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                                <h4>Machine Learning <span>Experts</span>.</h4>
+                        <div class="col_one_third nobottommargin">
+                            <div class="feature-box media-box">
+                                <div class="fbox-media">
+                                    <amp-img src="../images/services/2.jpg" alt="Why choose Us?" width="345" height="216" layout="responsive"></amp-img>
+                                </div>
+                                <div class="fbox-desc">
+                                    <h3>Placement Assistance.<span class="subtitle">We help you to get a job.</span></h3>
+                                    <p>We know what it takes to clear a coding interview. We will train you and get you placed. Our students generally get placed within 6 months from the program completion.
+                                    </p>
+                                </div>
                             </div>
-
-                            <p>All our mentors have more than 15 years of combined experience. We at valley help you
-                                understand programming right from the basic. So even if you are new to programming, dont
-                                worry we have everything that you want for success.</p>
-
                         </div>
 
-                        <div class="col_one_third">
-
-                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                                <h4>Placement <span>Assistance</span>.</h4>
+                        <div class="col_one_third nobottommargin col_last">
+                            <div class="feature-box media-box">
+                                <div class="fbox-media">
+                                    <amp-img src="../images/services/3.jpg" alt="Why choose Us?" width="345" height="216" layout="responsive"></amp-img>
+                                </div>
+                                <div class="fbox-desc">
+                                    <h3>Mentors.<span class="subtitle">Learning and to educate.</span></h3>
+                                    <p>All our mentors are US returns having studied in some of the prestigious universities. They have worked in companies like IBM Watson, PayPal, Akamai, etc. Their tremendous work experience and their love to teach will
+                                        make sure that our students learn from experts.</p>
+                                </div>
                             </div>
-
-                            <p>We know what it takes to clear a coding interview. We will train you and get you placed.
-                                Our students generally get placed within 6 months from the program completion. Sounds
-                                like a good deal?</p>
-
                         </div>
 
-                        <div class="col_one_third col_last">
+                    </div>
 
-                            <div class="heading-block fancy-title nobottomborder title-bottom-border">
-                                <h4>Easy EMI <span>Option</span>.</h4>
+                    <div class="section" id="valley">
+
+                        <div class="container clearfix">
+
+                            <div class="heading-block center">
+                                <h2>Valley Experience</h2>
+                                <span>Valley experience is all about learning to code in an effective and proper way. </span>
                             </div>
 
-                            <p>We understand the neccesity of learning top notch technology and the programming
-                                languages. Hence, we also offer you easy installments payments to help you learn and
-                                nothing comes between your career and you. Not even money.</p>
+                            <div class="col_one_fourth nobottommargin">
+
+                                <div class="feature-box fbox-plain">
+                                    <div class="fbox-icon">
+                                        <a href="#"><i class="i-alt">1.</i></a>
+                                    </div>
+                                    <h3>Pre work</h3>
+                                    <p>Before you get started with learning from valley, start your pre work. You will be given a certain amount of study material to finish before you start learning in valley.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin">
+
+                                <div class="feature-box fbox-plain">
+                                    <div class="fbox-icon">
+                                        <a href="#"><i class="i-alt">2.</i></a>
+                                    </div>
+                                    <h3>Learn at valley</h3>
+                                    <p>At valley, you will undergo a stringent hands on coding exercise in the supervision of some renowned instructors. Get ready to put your coding hat on.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin">
+
+                                <div class="feature-box fbox-plain">
+                                    <div class="fbox-icon">
+                                        <a href="#"><i class="i-alt">3.</i></a>
+                                    </div>
+                                    <h3>Placement training</h3>
+                                    <p>The moment you finish learning in the bootcamp, we directly start you placement training. This is again instructor led. We know what is usually asked in the interviews, and we prepare you exactly for that.</p>
+                                </div>
+
+                            </div>
+
+                            <div class="col_one_fourth nobottommargin col_last">
+
+                                <div class="feature-box fbox-plain">
+                                    <div class="fbox-icon">
+                                        <a href="#"><i class="i-alt">4.</i></a>
+                                    </div>
+                                    <h3>Post valley bootcamp</h3>
+                                    <p>We provide students support once they get placed too. You will have access to our instructors, study materials etc even after you graduate.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container clearfix" id="curriculum">
+
+                        <div class="col_two_fifth nobottommargin" style="min-height: 350px;margin-top: 30px;">
+                            <amp-img src="../images/about/curriculum.jpg" width="345"  height="518" layout="responsive"></amp-img>
+                        </div>
+
+                        <div class="col_three_fifth nobottommargin col_last">
+
+                            <div class="heading-block">
+                                <h3>Curriculum</h3>
+                                <span>Know the concepts that you are going to learn in weekly manner</span>
+                            </div>
+
+                            <p>This course will introduce the learner to applied machine learning, focusing more on the techniques and methods than on the statistics behind these methods. The course will start with a discussion of how machine learning is
+                                different than descriptive statistics. The issue of dimensionality of data will be discussed, and the task of clustering data, as well as evaluating those clusters, will be tackled. Supervised approaches for creating predictive
+                                models will be described. The course will end with a look at more advanced techniques, such as building ensembles, and practical limitations of predictive models. By the end of this course, students will be able to identify
+                                the difference between a supervised (classification) and unsupervised (clustering) technique, identify which technique they need to apply for a particular dataset and need, engineer features to meet that need, and write
+                                python code to carry out an analysis</p>
+
+                            <a href="../docs/The%20Valley%20Bootcamp%20-%20Python%20Machine%20Learning.pdf" class="button button-xlarge button-rounded">Download the Curriculum</a>
 
                         </div>
 
                         <div class="clear"></div>
-
+                        <div class="line"></div>
                     </div>
-                </section>
 
-
-
-                <!-- Content
-        ============================================= -->
-                <section id="content">
-                    <div class="heading-block center">
-                        <h2>Salary Scopes</h2>
-                        <span>Learn what an average software engineer earns</span>
-                    </div>
-                    <div class="content-wrap" id="experience">
-
-                        <div class="row clearfix">
-
-                            <amp-img src="../images/about/homesal1.jpg"   height="172"  ></amp-img>
-                             
-
-                            <div class="col-md-7 col-padding">
-                                <div>
-                                    <div class="heading-block">
-
-                                        <h3>Python + Machine Learning</h3>
-                                    </div>
-
-                                    <div class="row clearfix">
-
-                                        <div class="col-lg-6">
-                                            <p>As there are too many things that come under practical benefit of machine
-                                                learning. Also, they involve the development of autonomous computers,
-                                                software programs. Hence, it includes processes that can lead to
-                                                automation of tasks. Google and Facebook are using machine learning to
-                                                push relevant advertisements. That advertisements are based on users
-                                                past search behavior. Take a look at the salary packages that is offered
-                                                for Python and Machine Learning Engineers. According to research, Python
-                                                is one of the highest-paying programming languages in the world.</p>
-
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <amp-img class="image-center" src="../images/about/pythonsalary.jpg"
-                                                alt="Best bootcamp in Bangalore | thevalleybootcamp" width="335px" height="252px" layout="responsive"></amp-img>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row common-height bottommargin-lg clearfix">
-
-                            <div class="col-md-7 col-padding" style="background-color: #F5F5F5;">
-                                <div>
-                                    <div class="heading-block">
-
-                                        <h3>Full Stack Web Development</h3>
-                                    </div>
-
-                                    <div class="row clearfix">
-
-                                        <div class="col-lg-6">
-                                            <p>Web Developer Job Responsibilities: The role is responsible for
-                                                designing, coding and modifying websites, from layout to function and
-                                                according to a client's specifications. Strive to create visually
-                                                appealing sites that feature user-friendly design and clear navigation.
-                                                The growth in salary of a web developer is immensive If you choose to be
-                                                a web expert, join us and learn the skill from scratch to get job in
-                                                good companies. </p>
-
-                                        </div>
-
-                                        <div class="col-lg-6">
-                                            <amp-img  class="image-center" src="../images/appshowcase/jssalary.png"
-                                                alt="Top rated coding classes in Bangalore | The Valley Bootcamp" width="230" height="172" layout="responsive"></amp-img>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            
-
-                        </div>
+                    <div class="content-wrap">
 
                         <div class="container clearfix">
-
-
-                            <div class="heading-block bottommargin-lg center">
-                                <h2>The Valley Experience.</h2>
-                                <span>"The Valley Bootcamp" is an intensive coding bootcamp in Bangalore. We teach you
-                                    to code, We teach you to solve problems, We help you become great Engineers.</span>
+                            <div class="heading-block bottommargin-lg center" id="syllabus">
+                                <h2>Syllabus.</h2>
+                                <span>Take a look at our syllabus teaching methods.</span>
                             </div>
 
-                            <div class="col_one_third nobottommargin center">
-                                <a href="#"><amp-img  src="../images/appshowcase/s1.png"
-                                        alt="Best bootcamp in Bangalore | Learn coding in Bangalore | thevalleybootcamp"
-                                        class="bottommargin-sm small-image-center" width="128" height="128"  ></amp-img></a>
-                                <h4>Learn at Valley</h4>
-                                <p>At valley, you will undergo a stringent hands on coding exercise in the supervision
-                                    of some renowned instructors. Get ready to put your coding hat on.</p>
-                            </div>
+                            <div class="col_full nobottommargin">
 
-                            <div class="col_one_third nobottommargin center">
-                                <a href="#"><amp-img src="../images/appshowcase/s4.png"
-                                        alt="Learn coding in Bangalore | Bootcamp | The Valley Bootcamp"
-                                        class="bottommargin-sm small-image-center" width="128" height="128"  ></amp-img></a>
-                                <h4>Placement Training</h4>
-                                <p>The moment you finish learning in the bootcamp, we directly start your placement
-                                    training. This is again instructor led. We know what is usually asked in the
-                                    interviews, and we prepare you exactly for that.</p>
-                            </div>
+                                <h4>Weeks <small>(12)</small></h4>
 
-                            <div class="col_one_third nobottommargin center col_last">
-                                <a href="#"><amp-img src="../images/appshowcase/s5.png"
-                                        alt="Top rated coding classes in Bangalore | The Valley Bootcamp"
-                                        class="bottommargin-sm small-image-center" width="128" height="128"  ></amp-img></a>
-                                <h4>Post Valley Bootcamp</h4>
-                                <p>We provide students support once they get placed too. You will have access to our
-                                    instructors, study materials etc even after you graduate.</p>
-                            </div>
+                                <div class="accordion accordion-border clearfix" data-state="closed">
 
-                        </div>
+                                    
+                                		<amp-accordion disable-session-states class="course-accordion">
+									  <section>
 
-                        <div class="section nobottommargin" id="courses">
+									    <h2> <i class="acc-closed icon-question-sign"></i>&nbsp;&nbsp; Introduction to Python + ML.</h2>
+									     <ul>
+                                            <li>Install&nbsp;Ubuntu&nbsp;/&nbsp;VirtualBox</li>
+                                            <li>Explore&nbsp;Linux&nbsp;commands&nbsp;and&nbsp;shell&nbsp;scripting</li>
+                                            <li>Install&nbsp;Python,&nbsp;PIP,&nbsp;Virtualenv,&nbsp;Git</li>
+                                            <li>Setup&nbsp;Slack,&nbsp;GitHub,&nbsp;Google&nbsp;Drive</li>
+                                        </ul>
+									  </section>
 
-                             
+									  <section>
+									    <h2><i class="acc-closed icon-comments-alt"></i>&nbsp;&nbsp; Linux And Shell Scripting.</h2>
+									     <ul>
+                                            <li>Data&nbsp;structures&nbsp;in&nbsp;Python</li>
+                                            <li>Functions,&nbsp;Classes&nbsp;(OOPS),&nbsp;Packages&nbsp;in&nbsp;Python</li>
+                                            <li>Introduction&nbsp;to&nbsp;MVC&nbsp;architecture</li>
+                                            <li>HTTP,&nbsp;REST</li>
+                                            <li>Explore&nbsp;HTTP&nbsp;requests&nbsp;using&nbsp;Google&nbsp;Chrome</li>
+                                        </ul>
+									  </section>
 
-                            <div class="container clearfix" style="z-index: 1;">
+									  <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Python, PIP, Pycharm</h2>
+									     <ul>
+                                            <li>Create REST APIs using Flask</li>
+                                            <li>Use Postman to test your APIs</li>
+                                            <li>Add HTML forms to interact with REST APIs</li>
+                                            <li>Use Flask Templates</li>
+                                        </ul>
+									  </section>
 
-                                <div class="col_half nobottommargin">
 
-                                    <div class="heading-block topmargin-sm">
-                                        <h2>Python + Machine Learning</h2>
-                                        <span>The future of computers is here. Learn the latest Machine Learning using
-                                            Python. We always help you to excel in it.</span>
+									  <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Understanding REST API.</h2>
+									     <p>Capstone Project ­ building “Mini Amazon”</p>
+									  </section>
+
+									  <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Build your own rest API.</h2>
+									     <p>Capstone Project ­ building “Mini Amazon”</p>
+									  </section>
+
+									  <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Databases: MongoDb, SQL</h2>
+									     <ul>
+                                            <li>Cloud Computing</li>
+                                            <li>Create AWS account</li>
+                                            <li>Deploy “Mini Amazon” on EC2</li>
+                                            <li>Use DynamoDB for persistence</li>
+                                        </ul>
+									  </section>
+
+									  <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Cloud Computing: EC2, S3 etc.</h2>
+									     <p class="acc_content clearfix">
+	                                        Interview preparation ­ Data structures and Algorithms
+	                                    </p>
+									  </section>
+									  <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Interview preparation. DS and Algos.</h2>
+									      <ul>
+                                            <li>Intro to ML</li>
+                                            <li>Unsupervised, Supervised</li>
+                                            <li>Clustering, Classification, Regression</li>
+                                            <li>Jupyter Notebook</li>
+                                            <li>Pandas, Numpy, Ggplot, Sklearn</li>
+                                            <li>Reading data</li>
+                                            <li>Data visualization</li>
+                                        </ul>
+									  </section>
+
+									   <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Clustering and Regression</h2>
+									     <div class="acc_content clearfix">
+	                                        <h5>Clustering</h5>
+	                                        <ul>
+	                                            <li>K­means clustering </li>
+	                                            <li>DB Scan clustering</li>
+	                                            <li>Hierarchical clustering</li>
+	                                        </ul>
+	                                        <h5>Regression</h5>
+	                                        <ul>
+	                                            <li>Simple Linear regression</li>
+	                                            <li>Multiple Linear regression</li>
+	                                            <li>Polynomial regression</li>
+	                                        </ul>
+	                                    </div>
+									  </section>
+
+									   <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Forests and Logistic Regression</h2>
+									     <ul>
+                                            <li>K-­NN</li>
+                                            <li>Decision Trees</li>
+                                            <li>Random Forests</li>
+                                            <li>Logistic regression</li>
+                                        </ul>
+									  </section>
+
+									   <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Clustering and Classification.</h2>
+									     <div class="acc_content clearfix">
+                                        <h5>Classification</h5>
+                                        <ul>
+                                            <li>Naive Bayes
+                                            </li>
+                                            <li>SVM</li>
+                                            <li>Kernel SVM</li>
+                                        </ul>
+                                        <h5>Model evaluation</h5>
+                                        <h5>Ensemble learning</h5>
+                                        <h5>Dimensionality reduction ­ PCA</h5>
                                     </div>
+									  </section>
 
-                                    <p>This course will start with an introduction to python programming. The course
-                                        covers all the topics needed to be a good backend developer. On the scripting
-                                        part, we cover Linux and shell scripting. We also go through
-                                        the basics of github. We start with setting up the environment using python, pip
-                                        and pycharm. We go through how a rest api works and also implement few of them.
-                                        Our database lessons will include, mongoDb and SQL
-                                        and we also teach some basics in cloud computing like EC2, dynamoDb, RDS, S3
-                                        etc.</p>
 
-                                    <p>This course will introduce the learner to applied machine learning, focusing more
-                                        on the techniques and methods than on the statistics behind these methods. The
-                                        course will start with a discussion of how machine learning
-                                        is different than descriptive statistics.</p>
+									  <section>
+									    <h2> <i class="acc-closed icon-lock3"></i>&nbsp;&nbsp;&nbsp;&nbsp;Artificial Neural Networks</h2>
+									     <div class="acc_content clearfix">
+                                        <ul>
+                                            <li>Perceptron, Optimization, Loss function</li>
+                                            <li>Deep Learning</li>
+                                        </ul>
+                                        <h5>Project:­ Linear regression using Perceptron (TensorFlow)</h5>
+                                        <h5>Project: ­Image processing with MNIST dataset (TensorFlow)</h5>
+                                    </div>
+									  </section>
+									  
+									</amp-accordion>
 
-                                    <a href="../machinelearning.html"
-                                        class="button button-border button-rounded button-large button-dark noleftmargin">Know
-                                        the Curicullum</a>
 
                                 </div>
 
                             </div>
-
                         </div>
+                    </div>
 
-                        <div class="section notopmargin nobottommargin">
-                            <div class="container clearfix">
+                    <div class="heading-block bottommargin-lg center" id="placement">
+                        <h2>Placement Assistance.</h2>
+                        <span>You graduate from Valley and you will be prepared to face interviews.</span>
+                    </div>
+                    <div class="row common-height">
 
-                                <div class="col_half nobottommargin topmargin-lg">
-
-                                    <amp-img src="../images/appshowcase/iphone-solid.png"
-                                        alt="Highest rated bootcamp in Bangalore | Coding Classes | thevalleybootcamp"
-                                        class="center-block image-center" width="230" height="172" layout="responsive"></amp-img>
-
-                                </div>
-
-                                <div class="col_half nobottommargin topmargin-lg col_last">
-
-                                    <div class="heading-block topmargin-lg">
-                                        <h2>Python Backend Development</h2>
-                                        <span>Become an expert backend engineer.</span>
-                                    </div>
-
-                                    <p>This course will start with an introduction to python programming. The course
-                                        covers all the topics needed to be a good backend developer. On the scripting
-                                        part, we cover Linux and shell scripting. We also go through
-                                        the basics of github. We start with setting up the environment using python, pip
-                                        and pycharm. We go through how a rest api works and also implement few of them.
-                                        Our database lessons will include, mongoDb and SQL
-                                        and we also teach some basics in cloud computing like EC2, dynamoDb, RDS, S3
-                                        etc.</p>
-
-                                    <a href="../python.html"
-                                        class="button button-border button-rounded button-large button-dark noleftmargin">Know
-                                        the Curicullum</a>
-
-                                </div>
-
+                        <div class="col-lg-4 dark col-padding ohidden" style="background-color: rgb(26, 188, 156);">
+                            <div>
+                                <h3 class="uppercase" style="font-weight: 600;">Online presence</h3>
+                                <p style="line-height: 1.8;">Once you graduate, you will have strong and unique portfolio presence in github. You will be doing close to 3 projects during the class hours. We help you increase your marketability along with helping you to learn to code.</p>
+                                <i class="icon-bulb bgicon"></i>
                             </div>
                         </div>
 
-                        <div class="section notopmargin nobottommargin">
- 
+                        <div class="col-lg-4 dark col-padding ohidden" style="background-color: rgb(52, 73, 94);">
+                            <div>
+                                <h3 class="uppercase" style="font-weight: 600;">Excellent placement team</h3>
+                                <p style="line-height: 1.8;">We have a top notch placement team which is constantly looking to place our candidates into various companies. Our proven track record in placement is an example on how good our placement team is.</p>
+                                <i class="icon-cog bgicon"></i>
+                            </div>
+                        </div>
 
-                            <div class="container clearfix" style="z-index: 1;">
+                        <div class="col-lg-4 dark col-padding ohidden" style="background-color: rgb(231, 76, 60); ">
+                            <div>
+                                <h3 class="uppercase" style="font-weight: 600;">Practice, practice, practice</h3>
+                                <p style="line-height: 1.8;">And at last, you will undergo rigorous practice sessions in the form of mock interviews, whiteboard coding challenges, group discussions etc.</p>
+                                <i class="icon-thumbs-up bgicon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                <div class="col_half nobottommargin">
 
-                                    <div class="heading-block topmargin-sm">
-                                        <h2>Full Stack Web Development</h2>
-                                        <span>Learn the web with coding masters and be yourself a master of
-                                            technology.</span>
-                                    </div>
 
-                                    <p>The Full Stack Web Development course is aimed at teaching you the technologies
-                                        that are used to build powerful, multi-user web applications. We will cover
-                                        React JS on the front-end and NodeJS + MongoDB on the backend.
-                                        We will go through how a rest api works, how APIs are used all over the web
-                                        today to power multi-platform applications and build a few along the way.</p>
 
-                                    <a href="../fullstack.html"
-                                        class="button button-border button-rounded button-large button-dark noleftmargin">Know
-                                        the Curicullum</a>
+                <div class="heading-block bottommargin-lg center" id="details">
+                    <h2>Course Details.</h2>
+                    <span>Python + Machine Learning</span>
+                </div>
 
+                <div class="container clearfix">
+
+                    <div class="pricing-box pricing-extended bottommargin clearfix">
+
+                        <div class="pricing-desc">
+                            <div class="pricing-title">
+                                <h3>You can learn lot of things nd can have fun in this course</h3>
+                            </div>
+                            <div class="pricing-features">
+                                <ul class="iconlist-color clearfix">
+                                    <li><i class="icon-desktop"></i> Placement Training</li>
+                                    <li><i class="icon-eye-open"></i> Job Assistance</li>
+                                    <li><i class="icon-beaker"></i> Advanced Mentoring</li>
+                                    <li><i class="icon-magic"></i> Fun in Learning</li>
+                                    <li><i class="icon-font"></i> Educative Materials</li>
+                                    <li><i class="icon-stack3"></i> Sophisticated Environment</li>
+                                    <li><i class="icon-eye-open"></i> Duration: 1st June 2019 - 24th August 2019</li>
+                                    <li><i class="icon-eye-open"></i> Timings: Sat &amp; Sun ( 12 Weeks ) | 11:00 AM - 06:00 PM ( IST )</li>
+                                    <li><i class="icon-file2"></i> Complex Problems Solving Methods</li>
+                                    <li><i class="icon-stack3"></i> Hands on training.</li>
+                                   
+                                </ul>
+                            </div>
+                            </div>
+
+                        <!-- Modal -->
+
+                        <div class="pricing-action-area">
+                            <div class="pricing-unit">
+                                1st June 2019
+                            </div>
+                            <div class="pricing-price">
+                                <span class="price-unit">₹</span>54,990/- <span class="price-tenure"> inclusive of all taxes </span>
+                            </div>
+                            <div class="pricing-action">
+                            	<a href="#" data-toggle="modal" data-target="#contactFormModal" class="button button-3d button-large btn-block nomargin">Apply Now</a>
+
+                                <!--class="btn btn-success"<a href="contact.html" class="button button-3d button-large btn-block nomargin">Apply Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                
+                   
+
+                    <div class="fancy-title title-border">
+                        <h3>Our Mentors</h3>
+                    </div>
+
+                    <div class="col_one_third">
+
+                        <div class="team">
+                            <div class="team-image">
+                                <amp-img src="../images/team/2.jpg" alt="Nandeesh Hasbi" width="345" height="345" layout="responsive"></amp-img>
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Nandeesh Hasbi</h4>
                                 </div>
+                                <a href="https://www.linkedin.com/in/nandeeshhasbi/" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                    <i class="icon-linkedin"></i> 
+                                </a>
+                            </div>
+                        </div>
 
+                    </div>
+
+                    <div class="col_one_third">
+
+                        <div class="team">
+                            <div class="team-image">
+                                <amp-img src="../images/team/3.jpg" alt="Sunil D Shashidhara" width="345" height="345" layout="responsive"></amp-img>
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Sunil D Shashidhara</h4>
+                                </div>
+                                <a href="https://www.linkedin.com/in/sunil3590/" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                    <i class="icon-linkedin"></i> 
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col_one_third col_last">
+
+                        <div class="team">
+                            <div class="team-image">
+                                <amp-img src="../images/team/5.jpg" alt="Vijay Rangan" width="345" height="345" layout="responsive"></amp-img>
+                            </div>
+                            <div class="team-desc">
+                                <div class="team-title">
+                                    <h4>Vijay Rangan</h4>
+                                </div>
+                                <a href="https://www.linkedin.com/in/ranganvijay/" class="social-icon inline-block si-small si-light si-rounded si-facebook">
+                                    <i class="icon-linkedin"></i> 
+                                </a>
+
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="clear"></div>
+
+                </div>
+
+
+
+                <div class="container clearfix" id="subscribe" style="margin-top: 80px">
+
+                    <div class="heading-block center">
+                        <h3>You can take courses now and can pay later</h3>
+                        <span>We partnered with <a href="https://www.propelld.com/">Propelld</a> to provide our students with the education loan</span>
+                    </div>
+
+                    <p class="divcenter center" style="max-width: 800px;">Founded by ex-I bankers and consultants, Propelld goes beyond traditional CIBIL scores to value a student based on not just his current creditworthiness but signals that show his potential. We see a lot of factors to this effect and
+                        reward a student's performance to identify high-quality borrowers in spite of limited credit or work history.</p>
+
+                    <div class="col_full center topmargin nobottommargin">
+                        <a href="https://www.propelld.com">
+                            <amp-img src="../images/about/propelld.png" alt="Propelld Logo" width="255" height="53" layout="responsive"></amp-img></a>
+
+
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="divider divider-short divider-vshort divider-line divider-center">&nbsp;</div>
+
+                </div>
+
+                <!--FAQs 
+                <div class="container clearfix">
+
+
+                    <div class="heading-block center" id="faqs">
+                        <h3>Freequently Asked Questions</h3>
+                        <span>Clear your doubts with the questions and it's answers we get freequently.</span>
+                    </div>
+                    
+                    <div class="postcontent nobottommargin clearfix">
+
+                        <ul id="portfolio-filter" class="portfolio-filter clearfix">
+
+                            <li class="activeFilter"><a href="#" data-filter="all">All</a></li>
+                            <li><a href="#" data-filter=".faq-marketplace">Marketplace</a></li>
+                            <li><a href="#" data-filter=".faq-authors">Authors</a></li>
+                            <li><a href="#" data-filter=".faq-legal">Legal</a></li>
+                            <li><a href="#" data-filter=".faq-itemdiscussion">Item Discussion</a></li>
+                            <li><a href="#" data-filter=".faq-affiliates">Affiliates</a></li>
+                            <li><a href="#" data-filter=".faq-miscellaneous">Miscellaneous</a></li>
+
+                        </ul>
+
+                        <div class="clear"></div>
+
+                        <div id="faqs" class="faqs">
+
+                            <div class="toggle faq faq-marketplace faq-authors">
+                                <div class="togglet"><i class="toggle-closed icon-question-sign"></i><i class="toggle-open icon-question-sign"></i>How do I become an author?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-authors faq-miscellaneous">
+                                <div class="togglet"><i class="toggle-closed icon-comments-alt"></i><i class="toggle-open icon-comments-alt"></i>Helpful Resources for Authors</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-miscellaneous">
+                                <div class="togglet"><i class="toggle-closed icon-lock3"></i><i class="toggle-open icon-lock3"></i>How much money can I make?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-authors faq-legal faq-itemdiscussion">
+                                <div class="togglet"><i class="toggle-closed icon-download-alt"></i><i class="toggle-open icon-download-alt"></i>Can I offer my items for free on a promotional basis?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-marketplace faq-authors">
+                                <div class="togglet"><i class="toggle-closed icon-ok"></i><i class="toggle-open icon-ok"></i>An Introduction to the Marketplaces for Authors</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-affiliates faq-miscellaneous">
+                                <div class="togglet"><i class="toggle-closed icon-money"></i><i class="toggle-open icon-money"></i>How does the Tuts+ Premium affiliate program work?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-legal faq-itemdiscussion">
+                                <div class="togglet"><i class="toggle-closed icon-picture"></i><i class="toggle-open icon-picture"></i>What Images, Videos, Code or Music Can I Use in my Items?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-legal faq-authors faq-itemdiscussion">
+                                <div class="togglet"><i class="toggle-closed icon-file3"></i><i class="toggle-open icon-file3"></i>Can I use trademarked names in my items?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-affiliates">
+                                <div class="togglet"><i class="toggle-closed icon-bar-chart"></i><i class="toggle-open icon-bar-chart"></i>Tips for Increasing Your Referral Income</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-authors faq-itemdiscussion">
+                                <div class="togglet"><i class="toggle-closed icon-phone3"></i><i class="toggle-open icon-phone3"></i>How can I get support for an item which isn't working correctly?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
+                            </div>
+
+                            <div class="toggle faq faq-marketplace faq-itemdiscussion">
+                                <div class="togglet"><i class="toggle-closed icon-credit"></i><i class="toggle-open icon-credit"></i>How do I pay for items on the Marketplaces?</div>
+                                <div class="togglec">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus
+                                    enim libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas beatae vero vitae nulla.</div>
                             </div>
 
                         </div>
+                        <div class="clear"></div>
 
-                        <section id="section-testimonials" class="page-section section parallax dark testimonial-img-background mobile-parallax" >
+                        <div class="divider divider-short divider-vshort divider-line divider-center">&nbsp;</div>
 
-                            <div class="container clearfix">
+                    </div>
+                     .postcontent end -->
 
-                                <div class="col_half nobottommargin">&nbsp;</div>
+            </section>
 
-                                <div class="col_half nobottommargin col_last">
-
-                                    <div class="heading-block center">
-                                        <h4>What Students say!</h4>
-                                        <span>Some of our Students love us &amp; so we do!</span>
-                                    </div>
-
-                                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding"
-                                        data-arrows="false">
-                                        <div class="flexslider">
-                                            <div class="slider-wrap">
-                                                <amp-carousel height="300" layout="fixed-height" type="slides">
-                                                <div class="slide">
-                                                    <div class="testi-content">
-                                                        <p style="font-family: 'Roboto Condensed', sans-serif;">One of
-                                                            the best bootcamps in the Bengaluru, I can assure. I always
-                                                            had thought of taking a career switch but this valley
-                                                            bootcamp helped me to confidently take that path. Either
-                                                            you're a fresher
-                                                            or beginner, if you wanna learn something new and best ,
-                                                            just go for the valley bootcamp.</p>
-                                                        <div class="testi-meta">
-                                                            Abhijith
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
-                                                    <div class="testi-content">
-                                                        <p style="font-family: 'Roboto Condensed', sans-serif;">The
-                                                            Valley Bootcamp, A great place to start with trending
-                                                            technologies such as python, machine learning, cloud and
-                                                            many more. The best part of TVB is the instructors and their
-                                                            knowledge and the boot camp culture they follow, that's
-                                                            where TVB stands out from rest of the institutes. After
-                                                            completion of my course in TVB, I was having a very strong
-                                                            portfolio which distinguished
-                                                            me from the rest. I strongly recommend TVB to everyone who
-                                                            is looking for courses in the field of technology</p>
-                                                        <div class="testi-meta">
-                                                            Balu
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
-                                                    <div class="testi-content">
-                                                        <p style="font-family: 'Roboto Condensed', sans-serif;">Amazing
-                                                            Bootcamp, Sunil is an extremely resourceful instructor who
-                                                            has been working in some of the best software development
-                                                            teams in the USA and India. It is very different from a
-                                                            regular classroom
-                                                            session. Its more than a coaching boot camp and you will
-                                                            leave the boot camp with a lot of insight about how to learn
-                                                            new technologies and keep re-inventing your career. A huge
-                                                            credit to the
-                                                            entire team for setting up such an amazing place. Highly
-                                                            recommended and totally worth every single penny.</p>
-                                                        <div class="testi-meta">
-                                                            Vinay
-
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                </amp-carousel>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                        </section>
+    </section>
 
 
-
-
-
-                        <div class="container clearfix" id="subscribe" style="margin-top: 80px">
-
-                            <div class="heading-block center">
-                                <h3>You can take courses now and can pay later</h3>
-                                <span>We partnered with <a href="https://www.propelld.com/">Propelld</a> to provide our
-                                    students with the education loan</span>
-                            </div>
-
-                            <p class="divcenter center" style="max-width: 800px;">Founded by ex-I bankers and
-                                consultants, Propelld goes beyond traditional CIBIL scores to value a student based on
-                                not just his current creditworthiness but signals that show his potential. We see a lot
-                                of factors to this effect and reward a student's performance to identify high-quality
-                                borrowers in spite of limited credit or work history.</p>
-
-                            <div class="col_full center topmargin nobottommargin">
-
-                                <amp-img src="../images/about/propelld.png" alt="Propelld Logo" width="255" height="53" class="image-center" layout="responsive"></amp-img>
-
-                            </div>
-
-                            <div class="clear"></div>
-
-                            <div class="divider divider-short divider-vshort divider-line divider-center">&nbsp;</div>
-
-                            <!--      <div class="heading-block center">
-                                <h3>Subscribe for more <span>Updates</span>.</h3>
-                            </div>
-
-                            <div class="subscribe-widget">
-                                <div class="widget-subscribe-form-result"></div>
-                                <form id="widget-subscribe-form2" action="include/subscribe.php" role="form" method="post" class="nobottommargin">
-                                    <div class="input-group input-group-lg divcenter" style="max-width:600px;">
-                                        <div class="input-group-prepend">
-                                            <div class="input-group-text"><i class="icon-email2"></i></div>
-                                        </div>
-                                        <input type="email" name="widget-subscribe-form-email" class="form-control required email" placeholder="Enter your Email">
-                                        <div class="input-group-append">
-                                            <button class="btn btn-secondary" type="submit">Subscribe Now</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-
-                        </div>
-
-                        </div> -->
-                </section>
-                <!-- #content end -->
 
 
 
