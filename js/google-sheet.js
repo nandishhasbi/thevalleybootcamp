@@ -1,6 +1,28 @@
 // Variable to hold request
 var request;
 
+function sendContactToAgile(user){
+    var contact = {};
+    contact.email = user.email;
+    contact.name =  user.name; 
+    contact.company = "The Valley Bootcamp";
+    contact.title = "lead";
+    contact.phone = user.phone;
+    contact.course = user.course;
+    contact.message = user.message;
+    contact.website = "https://www.thevalleybootcamp.com";
+   
+
+    _agile.create_contact(contact, {
+        success: function (data) {
+            console.log("success");
+        },
+        error: function (data) {
+            console.log("error");
+        }
+    });
+}
+
 // Bind to the submit event of our form
 $("#contact_form").submit(function(event) {
 
@@ -45,6 +67,8 @@ $("#contact_form").submit(function(event) {
         );
     });
 
+
+
     // Callback handler that will be called regardless
     // if the request failed or succeeded
     request.always(function() {
@@ -63,6 +87,9 @@ $("#course_application").submit(function(event) {
     var email = $('#form1_email').val();
     var phone = $('#form1_phone').val();
     var message = $('#form1_message').val();
+    var course = $('#category1').val();
+
+
 
     if (name == '') {
         alert('Please provide us your name');
@@ -73,10 +100,19 @@ $("#course_application").submit(function(event) {
     } else if (phone == '' || isNaN(phone)) {
         alert('Please enter a valid phone number');
         return;
-    } else if (message == '') {
+    } /*else if (message == '') {
         alert('Please provide us a message');
         return false;
-    }
+    }*/
+
+     // sending contact form data to agile crm
+        var user = {};
+        user.name = name;
+        user.email = email;
+        user.phone = phone;
+        user.message = message;
+        user.course = course;
+        sendContactToAgile(user);
 
     // Abort any pending request
     if (request) {
@@ -118,6 +154,8 @@ $("#course_application").submit(function(event) {
             textStatus, errorThrown
         );
     });
+
+      
 
     // Callback handler that will be called regardless
     // if the request failed or succeeded
