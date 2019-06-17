@@ -6729,7 +6729,7 @@ a.block:hover > .feature {
 }
 .video-cover.border--round {
   overflow: hidden;
-  height: 98%;
+  height: 91%;
 }
 .video-cover.border--round iframe {
   border-radius: 6px;
