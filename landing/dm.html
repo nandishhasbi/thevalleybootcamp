@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The Valley Bootcamp</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/logo.png" type="image/x-icon">
+        <meta name="description" content="Site Description Here">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            @media screen and (max-width:960px){
+                #home-sec{
+                    text-align:center;
+                }
+                #home-sec img{
+                    display:none;
+                }
+                .callback-sec{
+                    display: block!important;
+                }
+                
+                .bg-video{
+                    height:100%;
+                    left:0;
+                }
+                .bootcampimg{
+                    margin-top:0px;
+                }
+                .btn.btn--sm + .btn--sm {
+                    margin-left: 0em;
+                }
+                .modal-content {
+                    width: 95%!important;
+                }
+            }
+            @media screen and (min-width:961px){
+                .bg-video{
+                    width:100%;
+                }
+                .feature-6:last-child, .feature-6:nth-last-child(1), .feature-6:nth-last-child(2){
+                    margin-bottom:0;
+                }
+            }
+            #home-sec h1{
+                font-size: 2.9em!important;
+            }
+            .callback-sec{
+                display: none;
+                width:50%;
+                z-index:1000;
+                position:fixed;
+                bottom:0px;
+            }
+            .callback-sec a{
+                width:100%;
+            }
+            .imagebg{
+                overflow:hidden;
+            }
+            .callback-sec.first{
+                left:0;
+            }
+            .callback-sec.sec{
+                right:0;
+            }
+            .bg-video{
+                position:absolute;
+                z-index:-100!important;
+                bottom:0;
+            }
+            .overlay{
+                background: rgba(2255,255,255,0.5);
+            }
+            .usp-img{
+                width: 80%;
+            }
+            .pad-20{
+                padding:15px 0px;
+            }
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+
+            /* Modal Content/Box */
+            .modal-content {
+            background-color: transparent;
+            margin: 5% auto; /* 15% from the top and centered */
+            padding: 20px;
+            width: 40%; /* Could be more or less, depending on screen size */
+            }
+
+            /* The Close Button */
+            .close {
+            color: #FFF;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            }
+    .orange{
+        color:orange;
+        font-size: 1.55714286em;
+    }
+            .close:hover,
+            .close:focus {
+            color: #EEE;
+            text-decoration: none;
+            cursor: pointer;
+            }
+        </style>
+        <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PFRG3DB');</script>
+<!-- End Google Tag Manager -->
+    </head>
+    <body class=" ">
+         <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRG3DB"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <a id="start"></a>
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-3 col-md-2">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="img/logo.png" />
+                                <img class="logo logo-light" alt="logo" src="img/logo.png" />
+                            </a>
+                        </div>
+                        <div class="col-9 col-md-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs bar--absolute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-1 col-md-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo.png" />
+                                    <img class="logo logo-light" alt="logo" src="img/logo.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-lg-11 col-md-12 text-right text-left-xs text-left-sm">
+                            <div class="bar__module">
+                                <ul class="menu-horizontal text-left">
+                                    <li class="dropdown">
+                                       <a href="#home-sec"> <span>Home</span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#about-sec"> <span>About Us</span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#course-sec"> <span>Course</span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#howitworks-sec"> <span>How It Works</span></a>
+                                    </li>
+                                    <li class="dropdown">
+                                        <a href="#team-sec"> <span>Team</span></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!--end module-->
+                            <div class="bar__module">
+                                <a class="btn btn--sm btn--primary type--uppercase" href="#contact-sec">
+                                    <span class="btn__text">
+                                        Contact Us
+                                    </span>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section id="home-sec">
+                <div class="container">
+                    <div class="row align-items-center justify-content-around">
+                        <div class="col-md-6">
+                            <h1>
+                                Be A Pro Digital Marketer With The Highest Rated Bootcamp In Bangalore
+                            </h1>
+                            <p class="lead">
+                                We have partnered with a Digital Marketing Agency which will provide our students internship and a chance to work on live Indian and USA projects.
+                            </p>
+                            <h4 class="orange">Intensive Bootcamp + Internship = High Paying Job</h4>
+                            <a class="btn btn--primary type--uppercase" href="#">
+                                <span id="myBtn" class="btn__text">
+                                    Get In Touch
+                                </span>
+                            </a>
+                            
+                        </div>
+                        <div class="col-6">
+                            <img alt="Image" src="img/homebanner2.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="pad-20 bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="slider slider--inline-arrows slider--arrows-hover text-center" data-arrows="true">
+                                <ul class="slides">
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/1.png" />
+                                    </li>
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/2.png" />
+                                    </li>
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/3.png" />
+                                    </li>
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/4.png" />
+                                    </li>
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/5.png" />
+                                    </li>
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/6.png" />
+                                    </li>
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/7.png" />
+                                    </li>
+                                    <li class="col-md-2 col-6">
+                                        <img alt="Image" class="image--xs" src="img/client/8.png" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <section id="about-sec" class="text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>Why We Are The Best</h2>
+                            <p class="lead">
+                                &quot;The Valley Bootcamp&quot; is an intensive digital marketing bootcamp in Bangalore serving companies some hot talent!
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature feature-6">
+                                    <img class="usp-img" src="img/usp/6.png">
+                                <h4>Internship certificate</h4>
+                                <p>
+                                    Intern with our partner agency for 2 days every week and be eligible for an internship certificate, in addition to learning tricks of the trade by working on real projects.
+                                </p>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-6">
+                                <img class="usp-img" src="img/usp/1.png">
+                                <h4>Experienced Faculty </h4>
+                                <p>
+                                        All our mentors are well qualified and experienced industry professionals. You will be supervised by some of the most renowned instructors. Get ready to put your coding hat on
+                                </p>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-6">
+                                    <img class="usp-img" src="img/usp/2.png">
+                                <h4>Placement Assistance</h4>
+                                <p>
+                                        We know what it takes to clear a coding interview. Upgrade your career skills to the next level. Our students have been working in top MNCs in India.
+                                </p>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-6">
+                                    <img class="usp-img" src="img/usp/3.png">
+                                <h4>Easy EMI Option</h4>
+                                <p>
+                                        We also offer you easy payment plans to ensure nothing comes between you and your career. Not even money. We have partnered with propelled for education loans.
+                                </p>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-6">
+                                <img class="usp-img" src="img/usp/4.png">
+                                <h4>Lifetime Access</h4>
+                                <p>
+                                        We provide students support once they get placed too. You will have access to our instructors, study materials etc even after you graduate. Get in touch anytime you need a hand.
+                                </p>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-6">
+                                    <img class="usp-img" src="img/usp/5.png">
+                                <h4>Multiple Locations</h4>
+                                <p>
+                                        Our centres are spread across the city ensuring easy access for everyone. Bengaluru’s traffic woes are all too well known after all. You can select a location closest to you.
+                                </p>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="space--xs imagebg" data-gradient-bg='#4876BD,#5448BD,#8F48BD,#BD48B1'>
+                <div class="container">
+                    <div class="cta cta--horizontal text-center-xs row">
+                        <div class="col-md-4">
+                            <h4>Study Now, Pay Later</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="lead">
+                                Easy EMI payment options available
+                            </p>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <a id="myBtn1" class="btn btn--primary type--uppercase">
+                                <span class="btn__text">
+                                    Know More
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>Interactive Teaching Environment</h2>
+                            <p class="lead">
+                                We value Study Ethics &amp; Environment as it helps in creating a Creative Buzz around you.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="switchable">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-4 co-md-push-1 text-center">
+                            <div class="video-cover border--round box-shadow-wide">
+                                <div class="background-image-holder">
+                                    <img alt="image" src="img/about-thumbnail.png" />
+                                </div>
+                                <div class="video-play-icon"></div>
+                                <video class="aboutvid" controls>
+                                    <source src="img/about.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <p class="text-justify">
+                                    We at The Valley Bootcamp focus on making you industry ready. We have found that a large gap exists between what traditional training institutes teaches and what skill sets the digital marketing industry looks for in a candidate. A lack of experience is also a big negative for freshers, not just because it looks bad on their resume, but also because they really lack the understanding of how marketing works and what activities should have what goals and priorities.
+                            </p><p class="text-justify">
+                                    We have found the perfect solution to this problem. We have structured the course in a way that students get to learn all about digital marketing during classes held in our bootcamp, and then get to implement them on real projects and clients when they go for internship with our partner agency. Students attend 2 classes every week in our bootcamp and 2 days internship every week with the partner digital marketing agency. This gives students a unique exposure into how the industry works and what marketing strategies are best for each kind of client. 
+                            </p><br>
+                            <div class="row text-center">
+                                <div class="col-md-6">
+                                    <div class="text-block">
+                                        <i class="icon icon--md icon-Students"></i>
+                                        <h4>200</h4>
+                                        <p>Number of Students</p>
+                                    </div>
+                                    <!--end feature-->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-block">
+                                        <i class="icon icon--md icon-Books"></i>
+                                        <h4>8</h4>
+                                        <p>Batches Trained</p>
+                                    </div>
+                                    <!--end feature-->
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row text-center">
+                                <div class="col-md-6">
+                                    <div class="text-block">
+                                        <i class="icon icon--md icon-Clock"></i>
+                                        <h4>1500</h4>
+                                        <p>Hours Trained</p>
+                                    </div>
+                                    <!--end feature-->
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="text-block">
+                                        <i class="icon icon--md icon-Suitcase"></i>
+                                        <h4>180</h4>
+                                        <p>Students Placed</p>
+                                    </div>
+                                    <!--end feature-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section id="course-sec" class="text-center bg--secondary">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>About The Digital Marketing Bootcamp</h2>
+                            <p class="lead">
+                                This bootcamp prepares you for interviews along with giving you deep understanding of Digital Marketing concepts.
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="switchable feature-large bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img alt="Image" src="img/course.png" />
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>Syllabus and Curriculum</h2>
+                                <p>
+                                    This course will start with an introduction to Digital Marketing. The course covers all the topics needed to be a good Digital Marketer. We will provide you an understanding of how to effectively implement and optimize online marketing campaigns that shows the best results. We will take you from beginner to advance level and by the end of this course you will know everything required to excel at the career of digital marketing.
+                                </p>
+                                <p>You will understand how to develop strategies to market a product or services online by integrating various online campaigns to get the brand's message out to prospects. The online promotions and campaigns can be carried out on various digital marketing platforms like, PPC, SEM, SEO, email, content and social media. You will be taught how to use them effectively which will help the campaigns to succeed.</p>
+                                <a id="myBtn2" class="btn btn--sm btn--primary type--uppercase">
+                                    <span class="btn__text">
+                                        Apply Now
+                                    </span>
+                                </a>
+                                <a id="myBtn4" class="btn btn--sm btn--primary type--uppercase">
+                                    <span class="btn__text">
+                                        Download The Curriculum
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="switchable switchable--switch bg--secondary feature-large">
+                <div class="container">
+                    <div class="row justify-content-around">
+                        <div class="col-md-6">
+                            <img alt="Image" class="bootcampimg" src="img/course1.png" />
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="switchable__text">
+                                <h2>What you can expect out of the Bootcamp</h2>
+                                <p>
+                                    Digital Marketing Industry is not just booming in India but across the world. In the coming years more people will be connected to the internet, this gives a lot of scope to digital marketers. Digital Marketing is an umbrella term that has various segments which works in different directions and contributes to the overall benefit of the brand. These days most of the businesses cannot even think of surviving in the market without online presence thus creating great career opportunities for digital marketers. A digital marketing manager is develops, implements and manages online marketing campaigns that connects the target audience with the brand. In Digital Marketing, theoretical concept is not enough but one needs to have a clear understanding of how to implement them. 
+                                </p>
+                                <p><b>Digtal Marketing Average Salary:</b></p>
+                                <p>INR 3,00,000/- to INR 10,00,000/- </p>
+                                <img src="img/graph.jpg" style="width:100%"/>
+                                <a id="myBtn3" class="btn btn--sm btn--primary type--uppercase">
+                                    <span class="btn__text">
+                                        Apply Now
+                                    </span>
+                                </a>
+                                <a id="myBtn5" class="btn btn--sm btn--primary type--uppercase">
+                                    <span class="btn__text">
+                                        Download The Curriculum
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section id="howitworks-sec" class="text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>How It Works</h2>
+                            <p class="lead">
+                                Valley experience is all about learning to code in an effective and proper way
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class=" ">
+                <div class="container">
+                    <div class="process-2 row">
+                        <div class="col-md-3">
+                            <div class="process__item">
+                                <h5>Pre Work</h5>
+                                <p>
+                                    Before you get started with learning from valley, start your pre work. You will be given a certain amount of study material to finish before you start learning in valley.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="process__item">
+                                <h5>Learn At Valley</h5>
+                                <p>
+                                    At valley, you will undergo a stringent hands on coding exercise in the supervision of some renowned instructors. Get ready to put your coding hat on.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="process__item">
+                                <h5>Placement Training</h5>
+                                <p>
+                                    The moment you finish learning in the bootcamp, we directly start you placement training. This is again instructor led. We know what is usually asked in the interviews, and we prepare you exactly for that.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="process__item">
+                                <h5>Post Valley Bootcamp</h5>
+                                <p>
+                                    We provide students support once they get placed too. You will have access to our instructors, study materials etc even after you graduate.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end process-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="bg--secondary text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h2>Additional Certifications
+                            </h2>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <div class="slider" data-paging="true">
+                                <ul class="slides">
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/fundamentals.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Google Fundamentals</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/advanced.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Google Advanced</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/display-cover-art.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Google Display</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/remarketing.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Google Remarketing</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/shopping-ads.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Shopping Ads</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/video-ads.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Video Ads</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/Facebook_Blueprint_Certification.jpg" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Facebook Blueprint</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/analytics.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Google Analytics</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/mobile-ads.png" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Google Ads Mobile</h5>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="col-md-4 col-12">
+                                        <div class="product">
+                                            <a href="#">
+                                                <img alt="Image" src="img/client/hubspot.jpg" />
+                                            </a>
+                                            <a class="block" href="#">
+                                                <div>
+                                                    <h5>Hubspot</h5>
+                                                </div>
+                                         <!--       <div>
+                                                    <span class="h4 inline-block">$1399</span>
+                                                </div> -->
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--end of col-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section id="team-sec" class="text-center">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>The Valley Thinktank</h2>
+                            <p class="lead">
+                                Our team members who have contributed immensely to our growth
+                            </p>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="text-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature feature-8">
+                                <img alt="Image" src="img/team/2.png" />
+                                <h5>Nandeesh Hasbi</h5>
+                                <span>Co-Founder</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-8">
+                                <img alt="Image" src="img/team/3.png" />
+                                <h5>Sunil D Shashidhara</h5>
+                                <span>Co-Founder</span>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-8">
+                                <img alt="Image" src="img/team/4.png" />
+                                <h5>Sankalp Shettar</h5>
+                                <span>Co-Founder</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section id="howitworks-sec" class="text-center bg--secondary">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-10 col-lg-8">
+                            <h2>Our Other Bootcamps</h2>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section class="bg--secondary">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="feature feature-1">
+                                <img alt="Image" src="img/course3.jpg" />
+                                <div class="feature__body boxed boxed--lg boxed--border">
+                                    <h3>Machine Learning Developer</h3>
+                                    <p class="lead">
+                                        Learn applied machine learning focused on techniques and methods
+                                    </p>
+                                    <a href="https://www.thevalleybootcamp.com/landing/ml.html">
+                                        Know More &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-1">
+                                <img alt="Image" src="img/course4.jpg" />
+                                <div class="feature__body boxed boxed--lg boxed--border">
+                                    <h3>Full Stack Developer<br><br></h3>
+                                    <p class="lead">
+                                            Learn React JS, Node JS, MongoDB, Express JS and other useful technologies
+                                    </p>
+                                    <a href="https://www.thevalleybootcamp.com/landing/fullstack.html">
+                                        Know More &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="feature feature-1">
+                                <img alt="Image" src="img/course3.jpg" />
+                                <div class="feature__body boxed boxed--lg boxed--border">
+                                    <h3>Python Backend Developer</h3>
+                                    <p class="lead">
+                                            The course covers all the topics needed to be a good backend developer
+                                    </p>
+                                    <a href="https://www.thevalleybootcamp.com/landing/python.html">
+                                        Know More &rarr;
+                                    </a>
+                                </div>
+                            </div>
+                            <!--end feature-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            
+            <section class="switchable imagebg" data-overlay='0' id="contact-sec">
+                <div class="background-image-holder">
+                        <video class="bg-video" autoplay loop muted>
+                                <source src="img/contact-bg.mp4" type="video/mp4">
+                        </video>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <div class="col-md-5">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.9574161314795!2d77.59592661430439!3d12.974575518324757!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae167a40d328c7%3A0xd432bda8420b5544!2sCasa+Lavelle+3!5e0!3m2!1sen!2sin!4v1552540462123" style="width:100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="text-block">
+                                <p class="lead">
+                                    E:
+                                    <a href="#">thevalleybootcamp@gmail.com</a>
+                                    <br /> P: +91 99645 19768
+                                </p>
+                                <p class="lead">
+                                    Please fill up the form below and we will contact you.
+                                </p>
+                            </div>
+                            <form class="form-email row mx-0" id="contact-box" data-success="Thanks for your enquiry, we'll be in touch shortly." data-error="Please fill in all fields correctly.">
+                                    <div class="col-md-6 col-12">
+                                        <label>Your Name:</label>
+                                        <input type="text" id="username" name="name" class="validate-required" />
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                            <label>Phone Number:</label>
+                                            <input type="number" id="phoneno" name="phoneno" class="validate-required" />
+                                        </div>
+                                        <div class="col-md-12 col-12">
+                                            <label>Email Address:</label>
+                                            <input type="email" id="emailid" name="email" class="validate-required validate-email" />
+                                        </div>
+                                    <div class="col-md-12 col-12">
+                                        <label>Message:</label>
+                                        <textarea rows="3" id="msg" name="Message" class="validate-required"></textarea>
+                                    </div>
+                                    <div class="col-md-5 col-lg-4 col-6">
+                                        <button type="submit" onclick="createContact();" class="btn btn--primary type--uppercase">Send Enquiry</button>
+                                    </div>
+                                </form>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="text-center-xs space--xs bg--dark ">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <ul class="list-inline">
+                                <li>
+                                    <a href="#about-sec">
+                                        <span class="h6 type--uppercase">About</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#course-sec">
+                                        <span class="h6 type--uppercase">Course</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#team-sec">
+                                        <span class="h6 type--uppercase">Team</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-5 text-right text-center-xs">
+                            <ul class="social-list list-inline list--hover">
+                                <li>
+                                    <a href="https://www.linkedin.com/company/the-valley-bootcamp/">
+                                        <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/valleybootcampindia/">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                    <div class="row">
+                        <div class="col-md-10">
+                            <span class="type--fine-print">&copy;
+                                <span class="update-year"></span> The Valley Bootcamp</span>
+                        </div>
+                        <div class="col-md-2 text-center">
+                            <a class="type--fine-print" href="#"> thevalleybootcamp@gmail.com </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <div class="callback-sec first">
+            <a class="btn btn--lg btn--primary type--uppercase" href="tel:+919964519768">
+                <span class="btn__text">
+                    Call Us
+                </span>
+            </a>
+        </div>
+        <div class="callback-sec sec">
+            <a class="btn btn--lg btn--primary type--uppercase" style="padding-left:5px; padding-right:5px;" href="#contact-box">
+                <span class="btn__text">
+                    Request Call Back
+                </span>
+            </a>
+        </div>
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="thevalleybootcamp_6714350885011456" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://thevalleybootcamp.agilecrm.com/forms/6714350885011456">online form</a></span></div>
+            </div>
+        </div>
+        <div id="myModal1" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="thevalleybootcamp_6649388833570816" class="agile_crm_form_embed"><span style="display:none">Fill out my <a href="https://thevalleybootcamp.agilecrm.com/forms/6649388833570816">online form</a></span></div>
+            </div>
+        </div>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script id="_agile_min_js" async type="text/javascript" src="https://thevalleybootcamp.agilecrm.com/stats/min/agile-min.js"> </script>
+        <script type="text/javascript" >
+        var Agile_API = Agile_API || {}; Agile_API.on_after_load = function(){
+        _agile.set_account('4aq115q7vkfbor18a97gh628f7', 'thevalleybootcamp', false);
+        _agile.track_page_view();
+        _agile_execute_web_rules();};
+        </script>
+        <script>
+            function createContact(){
+                var email_recieved  = document.getElementById("emailid").value;
+                var contact = {};
+                    contact.first_name = document.getElementById("username").value;
+                    contact.email = email_recieved;
+                    contact.phone = document.getElementById("phoneno").value;
+                    contact.message = document.getElementById("msg").value;
+                    _agile.create_contact(contact, {
+                        success: function (data) {
+                            // Set Email at success of contact creation. But you can set it at failure too.
+                            _agile.set_email(email_recieved);
+                            _agile.add_tag('Digital Marketing');
+                            location.href="https://www.thevalleybootcamp.com/thankyou/index.html";
+                            console.log("Response = "+data);
+                        },
+                        error: function (data) {
+                            
+                            alert("error");
+                            console.log("Error Cause = "+data);
+                        }
+                    });
+                }
+        </script>
+    </body>
+</html>
